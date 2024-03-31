@@ -142,10 +142,19 @@ export const Sidebar = () => {
                         Transformers
                     </Link>
                     <div className="collapse" id="collapsmenu-4">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="https://www.youtube.com/watch?v=ucityipiNtA&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> What are Transformers and GPTs?</Link>
+                        <Link to="https://www.youtube.com/watch?v=zxVhAYkSYcY&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Original Transformer architecture for LLM</Link>
+                        <Link to="https://youtu.be/ISNdQcPhsts?si=EA3BSRVo1Tr4Z4NC" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Coding a Transformer from scratch</Link>
+                        <Link to="https://www.youtube.com/watch?v=s6gys0iozLk&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> GPTs, BERTs, Full Transformers</Link>
+                        <Link to="https://www.youtube.com/watch?v=a1qomZy_yfo&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=klQnQMoy9zI&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 3</Link>
+                        <Link to="https://www.youtube.com/watch?v=yNZCcF6a7a4&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 4</Link>
+                        <Link to="https://www.youtube.com/watch?v=zgH69JoAB_k&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 5</Link>
+                        <Link to="https://www.youtube.com/watch?v=RsQxg913eXY&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Implementing a simple GPT in PyTorch</Link>
+                        <Link to="https://www.youtube.com/watch?v=zyDzpVu9lyA&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=oPcJg3QrKf4&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Hello World - GPT</Link>
+                        <Link to="https://www.youtube.com/watch?v=A8YqZKGRTAM&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Intro to (RLHF)</Link>
+                        <Link to="https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> CS25 - Transformers Course</Link>
                     </div>
 
                     {/* // Collaps menu 5 */}
@@ -153,10 +162,11 @@ export const Sidebar = () => {
                         Inference Configuration
                     </Link>
                     <div className="collapse" id="collapsmenu-5">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
+                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
+                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
+                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
+                        <Link to="" target="_blank" className="list-group-item">Work in progress...</Link>
                     </div>
 
                     {/* // Collaps menu 6 */}
@@ -164,10 +174,111 @@ export const Sidebar = () => {
                         Fine Tuning
                     </Link>
                     <div className="collapse" id="collapsmenu-6">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="https://www.youtube.com/watch?v=_KPEoCSKHcU&ab_channel=VenelinValkov" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tuning Tiny LLM on Your Data</Link>
+                        <Link to="https://www.youtube.com/watch?v=sIFokbuATX4&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Make LLM Fine Tuning 5x Faster</Link>
+                        <Link to="https://www.youtube.com/watch?v=Pb_RGAl75VE&ab_channel=DataCamp" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-Tuning Your Own Llama2 Model</Link>
+                        <Link to="https://www.youtube.com/watch?v=usoTCfyQxjU&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine Tune a Multimodal LLM "IDEFICS 9B"</Link>
+                        <Link to="https://www.youtube.com/watch?v=iMD7ba1hHgw&t=15s&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Anyone can Fine Tune LLMs using LLaMA Factory</Link>
+                        <Link to="https://www.youtube.com/watch?v=eLy74j0KCrY&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine Tune Phi-2 Model on Your Dataset</Link>
+                        <Link to="https://www.youtube.com/watch?v=mrKuDK9dGlg" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLM Fine Tuning Crash Course</Link>
+                        <Link to="https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tuning LLMs with PEFT and LoRA</Link>
+                        <Link to="https://huggingface.co/blog/peft_merging" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> PEFT new merging methods</Link>
+                        <Link to="https://huggingface.co/learn/cookbook/prompt_tuning_peft" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Prompt Tuning With PEFT</Link>
+                        <Link to="https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/prompt_tuning_peft.ipynb" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2 - colab docs</Link>
+                        <Link to="https://www.youtube.com/watch?v=1ILVm4IeNY8&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Train a Small Language Model</Link>
+                        <Link to="https://www.youtube.com/watch?v=anplUNnkM68&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Whisper for Speech Transcription</Link>
+                        <Link to="https://www.youtube.com/watch?v=g68qlo9Izf0&t=17s&ab_channel=DeepLearningAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Efficient Fine-Tuning for Llama-v2-7b</Link>
+                        <Link to="https://www.youtube.com/watch?v=E5kzAbD8D0w&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Direct Preference Optimization (DPO)</Link>
+                        <Link to="https://www.youtube.com/watch?v=74NSDMvYZ9Y&ab_channel=MatthewBerman" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine Tune LLaMA 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=kmkcNVvEz-k&ab_channel=brev" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-Tune Mistral 7B on Your Own Data</Link>
+                        <Link to="https://www.youtube.com/watch?v=OVqe6GTrDFM&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-Tune TinyLlama on Custom Dataset</Link>
+                        <Link to="https://www.youtube.com/watch?v=RzSDdosu_y8&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tune Mixtral 8x7B (MoE)</Link>
+                        <Link to="https://www.youtube.com/watch?v=lCZRwrRvrWg&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Mistral: Fine-Tune on Custom Data</Link>
+                        <Link to="https://www.youtube.com/watch?v=khPq69GgPAo&ab_channel=FahdMirza" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Self-Play Fine-Tuning (SPIN)</Link>
+                        <Link to="https://github.com/uclaml/SPIN" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Official implementation of Self-Play SPIN</Link>
+                        <Link to="https://www.youtube.com/watch?v=TRjq7t2Ms5I&t=10s&ab_channel=AIEngineer" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build prod-ready RAG Apps</Link>
+                        <Link to="https://www.youtube.com/watch?v=R4CUKAHShyE&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tuning 30x Fast on T4 GPUs</Link>
+                        <Link to="https://www.youtube.com/watch?v=XPU8PH0_d6g&ab_channel=SethJuarez" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> To Fine Tune or not Fine Tune?</Link>
+                        <Link to="https://youtu.be/VoDHpnCN6PA?si=Aq7soXO6k83mJJVs" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tune TinyLlama 1.1B locally</Link>
+                        <Link to="https://youtu.be/G5ENOwfPHFE?si=2BZ6Zh5x55TDr2dl" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Llama Factory: Fine-Tune LLMs easily?</Link>
+                        <Link to="https://youtu.be/z2QE12p3kMM?si=j52ptrx0GMnj9OSy" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Create custom dataset & train Llama2</Link>
+                        <Link to="https://youtu.be/2_o6epQToVY?si=CZMdu1u2IU0wXUz8" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LocalGPT: Convert your chats with Docs </Link>
+                        <Link to="https://www.youtube.com/watch?v=khIDeJwBf4k&ab_channel=AIMakerspace" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> D2SLM</Link>
+                        <Link to="https://www.youtube.com/watch?v=LslC2nKEEGU&t=2s&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLAMA2: FINE-TUNE ON YOUR DATA</Link>
+                        <Link to="https://www.youtube.com/watch?v=3fsn19OI_C8&ab_channel=AbhishekThakur" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Finetune LLAMA-v2 on local machine</Link>
+                        <Link to="https://www.youtube.com/watch?v=3fsn19OI_C8&ab_channel=AbhishekThakur" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Stable Diffusion XL (SDXL) DreamBooth</Link>
+                        <Link to="https://colab.research.google.com/drive/1HCpQkLL7UXW8xJUJJ29X7QAeNJKO0frZ?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Fine-tuning Notebook</Link>
+                        <Link to="https://huggingface.co/datasets/timdettmers/openassistant-guanaco" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Dataset on huggingface</Link>
+                        <Link to="https://docs.llamaindex.ai/en/stable/optimizing/fine-tuning/fine-tuning.html" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Fine tuning with LlamaIndex</Link>
+                        <Link to="https://colab.research.google.com/drive/1VoYNfYDKcKRQRor98Zbf2-9VQTtGJ24k?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Fine tuning Google Colab notebook</Link>
+                        <Link to="https://www.youtube.com/watch?v=g1dAsgibRcw&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine Tune pre-trained GPT and BERT</Link>
+                        <Link to="https://www.youtube.com/watch?v=_S01y-JY8k4&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-Tuning HF</Link>
+                        <Link to="https://www.youtube.com/watch?v=eIziN2QUt8U&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tune Multi-modal Vision</Link>
+                        <Link to="https://huggingface.co/blog/gemma-peft" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Fine-Tuning Gemma Models</Link>
+                        <Link to="https://newsletter.theaiedge.io/p/the-aiedge-how-to-fine-tune-large" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> The AiEdge+: How to fine-tune LLM</Link>
+                        <Link to="https://www.youtube.com/watch?v=K_8a056X4ys&ab_channel=AIMakerspace" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Aligning LLMs: ReFT</Link>
+                        <Link to="https://colab.research.google.com/drive/1MdZvYtm3xrkPrxzD71SZ6H9GTkG46VRF?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Dickens</Link>
+                        <Link to="https://medium.com/analytics-vidhya/how-to-fine-tune-llms-without-coding-41cf8d4b5d23" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Q&A on FAQs of GST Part 1</Link>
+                        <Link to="https://colab.research.google.com/drive/1RQc035W1_7CTEViYrsnRwYvOtObvXo-B?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Q&A on FAQs of GST Part 2</Link>
+                        <Link to="https://colab.research.google.com/drive/17fmNaq-2KwqJLHt4ZZ0X6FbmMlssq_vR?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Intent Classification with LLMs</Link>
+                        <Link to="https://colab.research.google.com/drive/1NLmQqbiXc-dU9C0ulNsUuubB3vbhaJbi?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Democratize and Automate</Link>
+                        <Link to="https://colab.research.google.com/drive/16Ofyeg2wse1UFEMwROCN5qqWHKgWZNIR?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Assessing Health Data with ML</Link>
+                        <Link to="https://www.youtube.com/watch?v=TB6URe5f3MA&ab_channel=Neo4j" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> NODES 2023 - Fine-Tuning </Link>
+                        <Link to="https://github.com/huggingface/cookbook/tree/main/notebooks/en" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Fine-tuning a Code LLM</Link>
+                        <Link to="https://youtu.be/cwT5JAqtTM4?si=x5NZgXKzgNx6xlt-" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tuning Zephyr-7B to znalyze</Link>
+                        <Link to="https://youtu.be/pCX_3p40Efc?si=UKvB7DSVb366Zzbe" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Building an LLM fine-tuning dataset</Link>
+                        <Link to="https://github.com/Sentdex/LLM-Finetuning" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Docs Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=_GkHZQYFOGM&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine tuning LLMs for Memorization</Link>
+                        <Link to="https://docs.google.com/presentation/d/1Un-H9d3ghlR23VddD3aR8aSWHHg9vjIwvYC45o0Vn7g/edit?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Docs </Link>
+                        <Link to="https://huggingface.co/datasets/Trelis/touch-rugby-rules-memorisation" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Dataset on huggingface</Link>
+                        <Link to="https://huggingface.co/blog/g-ronimo/phinetuning" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Phinetuning 2.0</Link>
+                        <Link to="https://www.youtube.com/watch?v=OQdp-OeG1as&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Structured Responses with QLoRa</Link>
+                        <Link to="https://www.youtube.com/watch?v=MDA3LUKNl1E&ab_channel=VenelinValkov" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-tuning Llama 2</Link>
+                        <Link to="https://github.com/curiousily/Get-Things-Done-with-Prompt-Engineering-and-LangChain" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> </Link>
+                        <Link to="https://cameronrwolfe.substack.com/p/easily-train-a-specialized-llm-peft#:~:text=LoRA%3A%20Low%2DRank%20Adaptation%20of%20Large%20Language%20Models%20%5B1%5D&text=LoRA%20leaves%20the%20pretrained%20layers,of%20the%20model%3B%20see%20below" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Train a Specialized LLM</Link>
+                        <Link to="https://www.youtube.com/watch?v=YyZqcNo4hdo&pp=ygUQZmluZSB0dW5pbmcgTExNXA%3D%3D" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Efficient Fine-Tuning for Llama 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=XpoKB3usmKc&ab_channel=ShawTalebi" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> QLoRA: Fine-tune LLM on Single GPU</Link>
+                        <Link to="https://colab.research.google.com/drive/1AErkPgDderPW0dgE230OOjEysd0QV1sR?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Docs</Link>
+                        <Link to="https://huggingface.co/blog/pref-tuning" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Preference Tuning LLM with DPO</Link>
+                        <Link to="https://huggingface.co/blog/dpo-trl" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Fine-tune Llama2 with DPO</Link>
+                        <Link to="https://www.youtube.com/watch?v=Jp-6hyf_CoE&ab_channel=AIMakerspace" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Practical Fine-Tuning of LLMs</Link>
+                        <Link to="https://www.canva.com/design/DAF-v_5WxcU/s2SCPuVA7ikGR0VSJOG6Rw/view?utm_content=DAF-v_5WxcU&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Part 2</Link>
+                        <Link to="https://colab.research.google.com/drive/1Jw9jthx_S62MPwKH9lqb6xPRwec4OiI6?usp=sharing" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://huggingface.co/HuggingFaceM4/idefics-9b" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Train  MultiModal LLM with Images</Link>
+                        <Link to="https://www.youtube.com/watch?v=ojjIYAbWP6U&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 2</Link>
+                        <Link to="https://huggingface.co/blog/ram-efficient-pytorch-fsdp" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Fine-tuning Llama 2 70B</Link>
+                        <Link to="https://youtu.be/9GjLAyn12MU?si=NYd1BmNv4vfVtde4" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> FineTune model locally: mistralai</Link>
+                        <Link to="https://huggingface.co/cloudyu/mistral_pretrain_demo" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Part 2</Link>
+                        <Link to="https://huggingface.co/blog/fine-tune-whisper" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Whisper Multilingual ASR Transformers</Link>
+                        <Link to="https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/fine_tune_whisper.ipynb" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Part 2</Link>
+                        <Link to="https://huggingface.co/blog/fine-tune-w2v2-bert" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> FT W2V2-Bert for low-resource</Link>
+                        <Link to="https://youtu.be/RevZAM9taFk?si=QuNJAVrLdqs7SUgE" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Google Gemma Finetuning</Link>
+                        <Link to="https://www.youtube.com/watch?v=GK860luUyEk&ab_channel=KamalrajMM" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Master Fine Tuning LLMs</Link>
+                        <Link to="https://youtu.be/ae2lbmtTY5A?si=0NXaw8tOXqh800x2" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> FT optimization DoRA, NEFT</Link>
+                        <Link to="https://huggingface.co/docs/trl/main/en/sft_trainer" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Supervised fine tuning</Link>
+                        <Link to="https://www.youtube.com/watch?v=eTieetk2dSw&ab_channel=DeepLearningAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Building with Instruction-Tuned LLM</Link>
+                        <Link to="https://dassum.medium.com/fine-tune-large-language-model-llm-on-a-custom-dataset-with-qlora-fb60abdeba07" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> FT LLM Custom Dataset with QLoRA</Link>
+                        <Link to="https://www.youtube.com/watch?v=Gpyukc6c0w8&t=16s&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Unsloth: Train LLM 5x Fast</Link>
+                        <Link to="https://www.youtube.com/watch?v=rANv5BVcR5k&ab_channel=NodematicTutorials" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Mistral Fine Tuning for Dummies</Link>
+                        <Link to="https://github.com/nodematiclabs/mistral-fine-tune" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Github Docs</Link>
+                        <Link to="https://www.youtube.com/watch?v=pWZfufhF45o&ab_channel=NodematicTutorials" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fine-Tuning Gemma</Link>
+                        <Link to="https://github.com/nodematiclabs/gemma-fine-tune" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Part 2</Link>
+                        <Link to="https://github.com/unslothai/unsloth?tab=readme-ov-file#-finetune-for-free" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Part 3</Link>
+                        <Link to="https://huggingface.co/papers/2305.18290" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> ​Direct Preference Optimization (DPO)</Link>
+                        <Link to="https://huggingface.co/papers/2310.12036" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Identity Preference Optimisation (IPO)</Link>
+                        <Link to="https://github.com/ContextualAI/HALOs" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Kahneman-Tversky Optimisation (KTO)</Link>
+                        <Link to="https://huggingface.co/blog/pref-tuning" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Pref tuning</Link>
+                        <Link to="https://github.com/mengdi-li/awesome-RLAIF" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> RLAIF</Link>
+                        <Link to="https://github.com/lqtrung1998/mwp_ReFT" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> ReFT</Link>
+                        <Link to="https://huggingface.co/blog/rlhf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> RHLF</Link>
+                        <Link to="https://github.com/xfactlab/orpo" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> Odd Ratio Preference Optimization(ORPO)</Link>
+                        <Link to="https://youtu.be/6kkJGkPZP88?si=CJf02_4Ub91Zz75I" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> ORPO</Link>
+                        <Link to="https://arxiv.org/pdf/2106.09685.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> LORA</Link>
+                        <Link to="https://www.superannotate.com/blog/llm-fine-tuning?source=post_page-----fb60abdeba07--------------------------------" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Benifits of Finetuning</Link>
+                        <Link to="https://www.e2enetworks.com/blog/rag-vs-fine-tuning-how-to-optimize-llm-performance#:~:text=Trade%2Doffs%3A%20Fine%2Dtuning%20may%20provide%20more%20control%20over,reliability%20of%20the%20knowledge%20base." target="_blank" className="list-group-item"><i className='bi bi-book-fill'></i> RAG Vs Fine-Tuning</Link>
+                        <Link to="https://www.blog.dailydoseofds.com/p/full-model-fine-tuning-vs-lora-vs" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Fine-tuning vs. LoRA vs. RAG</Link>
+                        <Link to="https://h2o.ai/blog/2023/streamlining-data-preparation-for-fine-tuning-of-large-language-models/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> H2O LLM DataStudio</Link>
+                        <Link to="https://h2o.ai/blog/2023/h2o-llm-datastudio-part-ii-convert-documents-to-qa-pairs-for-fine-tuning-of-llms/" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> H2O LLM DataStudio Part II</Link>
                     </div>
 
                     {/* // Collaps menu 7 */}
@@ -175,10 +286,10 @@ export const Sidebar = () => {
                         Retrieval augmented generation (RAG)
                     </Link>
                     <div className="collapse" id="collapsmenu-7">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
                     </div>
 
                     {/* // Collaps menu 8 */}
@@ -186,10 +297,16 @@ export const Sidebar = () => {
                         LLM Applications
                     </Link>
                     <div className="collapse" id="collapsmenu-8">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
                     </div>
 
                     {/* // Collaps menu 9 */}
