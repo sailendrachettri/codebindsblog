@@ -577,24 +577,56 @@ export const Sidebar = () => {
                     </Link>
                     <div className="collapse" id="collapsmenu-10">
                         <Link to="https://www.youtube.com/watch?v=WQDMKTEgQnY&ab_channel=AleksaGordi%C4%87-TheAIEpiphany" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> How does Groq LPU work?</Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="https://www.youtube.com/watch?v=S53BanCP14c&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Getting Started with Groq API</Link>
+                        <Link to="https://www.youtube.com/watch?v=vKWtFVqr6Wc&t=96s&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Groq API</Link>
+                        <Link to="https://youtu.be/oPCKB9MUP6c?si=FGDDaDm1KuXVazhP" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Builx an Agent with Personalized memory</Link>
+                        <Link to="https://youtu.be/a5l7E3tzsIY?si=V4Jzwu3J_ja1HsO2" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI chatbot with memory using Groq</Link>
+                        <Link to="https://github.com/InsightEdge01/GroqchatbotwithMemory/tree/main" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://youtu.be/J2sbC8X5Pp8?si=6L4sqm2izVXkDgR7" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fastest talking AI</Link>
+                        <Link to="https://aura-tts-demo.deepgram.com" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://github.com/gkamradt/QuickAgent" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
                         <Link to="" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> </Link>
                         <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
                     </div>
 
                     {/* // Collaps menu 11 */}
-                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-11" aria-expanded="false" aria-controls="collapsmenu-11">
-                    
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-11" aria-expanded="false" aria-controls="collapsmenu-11">
+                        HuggingFace
                     </Link>
                     <div className="collapse" id="collapsmenu-11">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                    </div>
+
+                    {/* // Collaps menu 12 */}
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-12" aria-expanded="false" aria-controls="collapsmenu-12">
+                        Responsible AI
+                    </Link>
+                    <div className="collapse" id="collapsmenu-12">
+                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                    </div>
+
+                    {/* // Collaps menu 13 */}
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-13" aria-expanded="false" aria-controls="collapsmenu-13">
+                        General ML, DL
+                    </Link>
+                    <div className="collapse" id="collapsmenu-13">
+                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                    </div>
+
+                    {/* // Collaps menu 14 */}
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-14" aria-expanded="false" aria-controls="collapsmenu-14">
+                        Recomanded Youtube Channels
+                    </Link>
+                    <div className="collapse" id="collapsmenu-14">
+                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                    </div>
+
+                    {/* // Collaps menu 15 */}
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
+                    
+                    </Link>
+                    <div className="collapse" id="collapsmenu-15">
+                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
                     </div> */}
 
 
