@@ -448,16 +448,119 @@ export const Sidebar = () => {
                         LLM Applications
                     </Link>
                     <div className="collapse" id="collapsmenu-8">
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
-                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="https://www.youtube.com/watch?v=ZHZKPmzlBUY&ab_channel=Decoder" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLM Chat App in Python</Link>
+                        <Link to="https://www.youtube.com/watch?v=hyP1ekLKtiI&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Visual Q&A with IDEFICS</Link>
+                        <Link to="https://www.youtube.com/watch?v=V21GfgSFuGk&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Outfit Anyone: A Diffusion Project</Link>
+                        <Link to="https://www.youtube.com/watch?v=kvbjB-q5Dss&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Oncology RAG App - Powered by Meditron</Link>
+                        <Link to="https://www.youtube.com/watch?v=d9wCHH3iknM&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Investment Banker RAG Chatbot</Link>
+                        <Link to="https://www.youtube.com/watch?v=Rh9Jl0hJSws&ab_channel=AssemblyAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> RAG App for Multi-Speaker Audio Data</Link>
+                        <Link to="https://www.youtube.com/watch?v=euYa4iesOm8&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deploy RAG App on Vercel</Link>
+                        <Link to="https://www.youtube.com/watch?v=JkGU3d8IM1c&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LlamaIndex App with Create Llama</Link>
+                        <Link to="https://www.youtube.com/watch?v=iTGbwD-sSxM&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoLLM: Ship RAG based LLM Apps</Link>
+                        <Link to="https://www.youtube.com/watch?v=U9K1Cu45nMQ&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Query Your CSV using LIDA</Link>
+                        <Link to="https://www.youtube.com/watch?v=01_2-Dy57ys&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Chat with Data App: RAG using Mistral</Link>
+                        <Link to="https://www.youtube.com/watch?v=HmZzbhL8Tf8&list=PLfaIDFEXuae2Zb0phFLWAxgrJT7f416xq&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build LLM Apps with Langchain</Link>
+                        <Link to="https://www.youtube.com/watch?v=C5mqILmVUEo&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> RAG Implementation using Mistral 7B</Link>
+                        <Link to="https://www.youtube.com/watch?v=cddahTnCo10&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build an AI News Anchor Generator App</Link>
+                        <Link to="https://www.youtube.com/watch?v=52Xq6AaRnT4&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Screenshot to Code Generation</Link>
+                        <Link to="https://www.youtube.com/watch?v=PYEnK_iQeZU&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> ComfyUI GUI for Image and Video Generation</Link>
+                        <Link to="https://www.youtube.com/watch?v=cDY8lm6vg7w&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build Generative AI Agents using Dialogflow CX</Link>
+                        <Link to="https://www.youtube.com/watch?v=NU406wZz1eU&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build a Containerized Transcription API</Link>
+                        <Link to="https://www.youtube.com/watch?v=wmfAJWwyaQA&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build Your RAG-based ChatGPT Web App</Link>
+                        <Link to="https://www.youtube.com/watch?v=Iyzvka711pc&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Create Veterinary Chatbot: Llama2</Link>
+                        <Link to="https://www.youtube.com/watch?v=Nlo7WclRBXc&t=512s&pp=ygUGb2xsYW1h" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build Your API for Llama 2 on AWS</Link>
+                        <Link to="https://www.youtube.com/watch?v=Ror2xOOA-VE&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deploy Llama 2 for your Entire Organisation</Link>
+                        <Link to="https://www.youtube.com/watch?v=aSh66tG1B5o&pp=ygUNb2xsYW1hIG9uIEFXUw%3D%3D" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Install and Run Mistral 7B on AWS</Link>
+                        <Link to="https://www.youtube.com/watch?v=rQq1m2aJ_fk&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deploy Llama 2 on AWS SageMaker</Link>
+                        <Link to="https://www.youtube.com/watch?v=hkSnPhhjm1Y&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Enterprise Chat App using Azure Cognitive</Link>
+                        <Link to="https://www.youtube.com/watch?v=7CeAJ0EbzDA&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Containerizing LLM-Powered Apps</Link>
+                        <Link to="https://www.youtube.com/watch?v=vYIlhgVHAls&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=1TU9ZrZhqw0&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Serve a Custom LLM</Link>
+                        <Link to="https://www.youtube.com/watch?v=I83TH4x9keo&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Long Context Summarization</Link>
+                        <Link to="https://www.youtube.com/watch?v=hHn_cV5WUDI&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Function Calling Datasets, Training and Inference</Link>
+                        <Link to="https://www.youtube.com/watch?v=6LGGQERxrQo&ab_channel=SingleStore" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build an OpenAI LLM on a Private Network</Link>
+                        <Link to="https://www.youtube.com/watch?v=Yj_7FuFgPyI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Amazon Bedrock</Link>
+                        <Link to="https://www.youtube.com/watch?v=wZDVgy_14PE&pp=ygUNb2xsYW1hIG9uIEFXUw%3D%3D" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> FULLY LOCAL Mistral AI PDF Processing</Link>
+                        <Link to="https://www.youtube.com/watch?v=XFiof0V3nhA&ab_channel=MatthewBerman" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> PrivateGPT 2.0 - FULLY LOCAL Chat With Docs</Link>
+                        <Link to="https://www.youtube.com/watch?v=kPaiZe_qD34&ab_channel=WorldofAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoLLM: Create RAG Based LLM Web App</Link>
+                        <Link to="https://www.youtube.com/watch?v=h2FDjUyvsKE&ab_channel=llmware" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Use OpenChat and LM Studio</Link>
+                        <Link to="https://www.youtube.com/watch?v=Bncvggy6m5Q&ab_channel=llmware" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Compare Embedding Models</Link>
+                        <Link to="https://www.youtube.com/watch?v=ob45YmYD2KI&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoGen Studio with 100% Local LLMs</Link>
+                        <Link to="https://www.youtube.com/watch?v=KIvl-VY8H0Y&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoGen Studio UI 2.0</Link>
+                        <Link to="https://github.com/langchain-ai/web-explorer/tree/main" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i>  lightweight app using the WRR</Link>
+                        <Link to="https://www.youtube.com/watch?v=JeruKKuMxCg&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Your LLM Powered Financial Analyst</Link>
+                        <Link to="https://www.youtube.com/watch?v=98Ri4VVBP_8&t=431s" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoGen + Panel Ep.3 - Web UI</Link>
+                        <Link to="https://github.com/yeyu2/Youtube_demos" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=9lSaRP9GLCY" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Full Function UI for AutoGen</Link>
+                        <Link to="https://www.youtube.com/watch?v=UIBerUGqHjc&ab_channel=YeyuLab" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoGen+Function Calling+OpenSource LLMs</Link>
+                        <Link to="https://www.youtube.com/watch?v=HN96PTdiseo&ab_channel=YeyuLab" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Open Source LLMs in AutoGen</Link>
+                        <Link to="https://www.youtube.com/watch?v=xZDB1naRUlk" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Development with LLM</Link>
+                        <Link to="https://youtu.be/w5unVTO7mLQ?si=LLictvhoG4hm2JJy" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Make an offline GPT voice assistant</Link>
+                        <Link to="https://www.youtube.com/watch?v=kXuHxI5ZcG0&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build and Run a Medical Chatbot</Link>
+                        <Link to="https://www.youtube.com/watch?v=FZrkm0vaYYQ&ab_channel=DataScienceBasics" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Chat With Websites Using ChainLit</Link>
+                        <Link to="https://github.com/sudarshan-koirala/chat-with-website" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=z9wDKwgQojM&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LocalGPT API</Link>
+                        <Link to="https://www.youtube.com/watch?v=nHuHGoLSXb0&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deploy and Use any Open Source LLMs </Link>
+                        <Link to="https://www.youtube.com/watch?v=0MOMBJjytkQ&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> CPU-based SLMs for AI Agents</Link>
+                        <Link to="https://www.youtube.com/watch?v=MQmfSBdIfno&t=337s&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Function Calling using Open Source LLM</Link>
+                        <Link to="https://www.assemblyai.com/docs/getting-started/apply-llms-to-audio-files" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LeMUR</Link>
+                        <Link to="https://www.langchain.com/langchain" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LangChain</Link>
+                        <Link to="https://www.llamaindex.ai/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LlamaIndex</Link>
+                        <Link to="https://haystack.deepset.ai/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Haystack</Link>
+                        <Link to="https://www.youtube.com/watch?v=wdF-0CGkoeQ&ab_channel=AssemblyAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Watch on Youtube</Link>
+                        <Link to="https://speakerdeck.com/pamelafox/vector-search-and-retrieval-for-generative-ai-app-microsoft-ai-tour-sf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Vector search, RAG</Link>
+                        <Link to="https://www.youtube.com/live/vuOA13Y_Qzk?si=bT6zY4piPt_yUn_Q" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Part 2</Link>
+                        <Link to="https://github.com/pamelafox/vector-search-demos" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://github.com/pamelafox/vector-search-demos" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 4</Link>
+                        <Link to="https://github.com/Azure-Samples/azure-search-openai-demo" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 5</Link>
+                        <Link to="https://youtu.be/d7nAcshOe4w?si=kArGQ_Ua8pFdvzFy" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Manage vector databases</Link>
+                        <Link to="https://youtu.be/KVOWPeV9s00?si=T9K6edpHIcAr0BBS" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LlamaIndex with LanChainin Flowwise</Link>
+                        <Link to="https://huggingface.co/blog/Alex1337/create-a-web-interface-for-your-llm-in-python" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Web Interface for LLM in Python</Link>
+                        <Link to="https://github.com/Avaiga/taipy" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Data & AI algo into prod-ready web apps</Link>
+                        <Link to="https://www.taipy.io/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Taipy.io</Link>
+                        <Link to="https://youtu.be/wXiTuNnh2h4?si=P58oj6TLjhqOmtOD" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> I made AI to auto categorise 10K comments</Link>
+                        <Link to="https://youtu.be/A_m3tCqdts4?si=23s00oY8opM8i2PR" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build Medical RAG app using Biomistral</Link>
+                        <Link to="https://youtu.be/qjRrMxT20T0?si=hQj7YxUJAj2Y2unV" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Steerable AI with Pinecone</Link>
+                        <Link to="https://huggingface.co/blog/constitutional_ai" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Constitutional AI with Open LLMs</Link>
+                        <Link to="https://github.com/huggingface/alignment-handbook/tree/main/recipes/constitutional-ai" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=-Rs8-M-xBFI&ab_channel=TimCarambat" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Stop paying for ChatGPT</Link>
+                        <Link to="https://www.youtube.com/watch?v=n9AMtXLveMs&t=11s&ab_channel=DataScienceBasics" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Create Chat UI Using ChainLit, LangChain</Link>
+                        <Link to="https://www.youtube.com/watch?v=FgG-trkAMwU&ab_channel=DataScienceBasics" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LangSmith For Beginners</Link>
+                        <Link to="https://youtu.be/D8PM89Xry7Q?si=N52WpnQn-CsUqHex" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> deploy LlamaIndex RAG App to Vercel</Link>
+                        <Link to="https://www.youtube.com/watch?v=fLGj63fiYfM&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> PhiData</Link>
+                        <Link to="https://www.youtube.com/watch?v=o4-4NvrcOvs&ab_channel=AIFORDEVS" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Boost Gmail Efficiency with AI</Link>
+                        <Link to="https://github.com/joaomdmoura/crewAI" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=y4WvwHqRR60&ab_channel=llmware" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Complex Research Analysis with AI Agent</Link>
+                        <Link to="https://huggingface.co/llmware" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://github.com/llmware-ai/llmware" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://github.com/llmware-ai/llmware/tree/main/examples/SLIM-Agents/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 4</Link>
+                        <Link to="https://www.youtube.com/watch?v=MgAIrGxnN-8&ab_channel=WorldofAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Creating Production-Grade Apps with Taipy</Link>
+                        <Link to="https://www.youtube.com/watch?v=Wtt9tuO8UPY&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Anthropic Claude API</Link>
+                        <Link to="https://www.youtube.com/watch?v=7lP7fune0Gw&ab_channel=DataInsightEdge" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build an AI Applicant Tracking System(ATS) </Link>
+                        <Link to="https://www.youtube.com/watch?v=7_926xGDbDY&ab_channel=DataInsightEdge" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build & Chat with Invoices</Link>
+                        <Link to="https://www.youtube.com/watch?v=UXLWLFOB0Xo&ab_channel=DataInsightEdge" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Chat with Multiple Docs using Gemini Pro</Link>
+                        <Link to="https://www.youtube.com/watch?v=7h8ZHSkAkas&ab_channel=PromptEngineering" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> GEMINI Pro with LangChain</Link>
+                        <Link to="https://www.youtube.com/watch?v=G3-YOEVg-xc&ab_channel=SamWitteveen" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Gemini Pro+LangChain - Chains</Link>
+                        <Link to="https://youtu.be/r2PvHdkaXWc?si=alEiCMZwy0xAwNwG" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LangGraph+functioncall+Yahoofinance</Link>
+                        <Link to="https://www.youtube.com/watch?v=n_h_XWM2vzg&ab_channel=SuperLazyCoder" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Visual Q&A with Google Deplot</Link>
+                        <Link to="https://youtu.be/U_Sg3Odf1vk?si=gzDboL0gLYTPn7Q6" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> CrewAI agents for stock analysis</Link>
+                        <Link to="https://youtu.be/9RKXffJsJhs?si=Ly_ocxdSttphdhKk" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build an LLM powered chrome extension</Link>
+                        <Link to="https://www.youtube.com/live/NdF609kO8FY?si=OLcaLpy3ALBUeOUF" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build agent forward Apps</Link>
+                        <Link to="https://www.youtube.com/watch?v=LuBROahHvfo&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Claude 3 Function Calling</Link>
+                        <Link to="https://www.youtube.com/watch?v=OQJ4gp70Zg0&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Automate Recruitment Process</Link>
+                        <Link to="https://www.youtube.com/watch?v=fo0F-DAum7E&ab_channel=DeepLearningAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build Prod-Grade LLM Apps</Link>
+                        <Link to="https://huggingface.co/learn/cookbook/stable_diffusion_interpolation" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Images Interpolation with Stable Diffusion</Link>
+                        <Link to="https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/stable_diffusion_interpolation.ipynb" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.youtube.com/watch?v=alHnQjyn7hg&ab_channel=LangChain" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Building Google's Dramatron</Link>
+                        <Link to="https://youtu.be/0HxHkNT4_EU?si=qeOsaRbRC6gt-rtA" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Ai Agent Chatbot</Link>
+                        <Link to="https://youtu.be/dS06WQaxmjk?si=rh6rtw4EDDlph3xE" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Graph Chatbot</Link>
+                        <Link to="https://youtu.be/YB9M5tNAZVs?si=9NzLEB6okREdlpkL" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Super SQL Chabot</Link>
+                        <Link to="https://youtu.be/_WmH2WSuT_8?si=Jq-r8eib1G9bVjrj" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Super Tiny Chatbot</Link>
+                        <Link to="https://www.youtube.com/watch?v=-Q81tuPB0Ok&ab_channel=MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Real-Time Car Speed Tracking</Link>
+                        <Link to="https://github.com/roboflow/supervision/tree/develop" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://github.com/ultralytics/ultralytics" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://www.youtube.com/watch?v=FXbSdspVtNE&ab_channel=FahdMirza" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build AI Chatbot with Hugging Face</Link>
+                        <Link to="https://huggingface.co/facebook/blenderbot-400M-distill" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
                     </div>
 
                     {/* // Collaps menu 9 */}
@@ -465,17 +568,29 @@ export const Sidebar = () => {
                         Prompt engineering
                     </Link>
                     <div className="collapse" id="collapsmenu-9">
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
-                        <Link to="" target="_blank" className="list-group-item"></Link>
+                        <Link to="" target="_blank" className="list-group-item">Work in progress...</Link>
                     </div>
 
                     {/* // Collaps menu 10 */}
-                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-10" aria-expanded="false" aria-controls="collapsmenu-10">
-                    
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-10" aria-expanded="false" aria-controls="collapsmenu-10">
+                        LPU
                     </Link>
                     <div className="collapse" id="collapsmenu-10">
+                        <Link to="https://www.youtube.com/watch?v=WQDMKTEgQnY&ab_channel=AleksaGordi%C4%87-TheAIEpiphany" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> How does Groq LPU work?</Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                    </div>
+
+                    {/* // Collaps menu 11 */}
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-11" aria-expanded="false" aria-controls="collapsmenu-11">
+                    
+                    </Link>
+                    <div className="collapse" id="collapsmenu-11">
                         <Link to="" target="_blank" className="list-group-item"></Link>
                         <Link to="" target="_blank" className="list-group-item"></Link>
                         <Link to="" target="_blank" className="list-group-item"></Link>
