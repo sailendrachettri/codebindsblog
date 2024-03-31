@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom'
 export const Cards = () => {
     return (
         <>
-            <div className='container-fluid col-10 d-flex justify-content-start flex-wrap mt-3'>
+            <div className='container-fluid d-flex justify-content-center flex-wrap mt-3'>
                 <h2>Learn Large Language Model</h2>
-                <p className='mb-4'>A large language model (LLM) is a deep learning algorithm that can perform a variety of natural language processing (NLP) tasks.</p>
+                <p className='mb-4 mx-3'>A large language model (LLM) is a deep learning algorithm that can perform a variety of natural language processing (NLP) tasks.</p>
 
                 <div className="card border-secondary mb-3 mx-2" style={{ maxWidth: "18rem" }}>
                     <Link to="#" className="card-header text-primary text-decoration-none">History of NLP  <i class="bi bi-hand-index-thumb"></i> </Link>
