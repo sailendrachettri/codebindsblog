@@ -601,7 +601,24 @@ export const Sidebar = () => {
                         HuggingFace
                     </Link>
                     <div className="collapse" id="collapsmenu-11">
-                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                        <Link to="https://huggingface.co/docs" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Huggingface docs</Link>
+                        <Link to="https://huggingface.co/blog/text-generation-inference-on-inferentia2" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Huggingface Inferentia2</Link>
+                        <Link to="https://www.youtube.com/watch?v=Kd4JL7GnR8Y&ab_channel=TrelisResearch" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Pushing Models to HuggingFace</Link>
+                        <Link to="https://github.com/TrelisResearch/install-guides/blob/main/Pushing_to_Hub.ipynb" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://awsdocs-neuron.readthedocs-hosted.com/en/latest/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://huggingface.co/docs/optimum-neuron/index" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 4</Link>
+                        <Link to="https://www.youtube.com/watch?v=66JUlAA8nOU&ab_channel=JulienSimon" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Hugging Face models on AWS</Link>
+                        <Link to="https://huggingface.co/blog/leaderboards-on-the-hub-vectara" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Hugging Face leaderboard</Link>
+                        <Link to="https://huggingface.co/blog/leaderboards-on-the-hub-hallucinations" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> The Hallucinations Leaderboard</Link>
+                        <Link to="https://huggingface.co/blog/researcher-dataset-sharing" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Creating open ML datasets?</Link>
+                        <Link to="https://huggingface.co/blog/inference-endpoints-embeddings" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Deploy Embedding Models</Link>
+                        <Link to="https://youtu.be/MvNdgmM7uyc?si=b78VIhFapFo2U8NV" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Build assistant from scratch</Link>
+                        <Link to="https://huggingface.co/blog/pollen-vision" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Pollen-Vision</Link>
+                        <Link to="https://github.com/pollen-robotics/pollen-vision" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://www.pollen-robotics.com/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
+                        <Link to="https://huggingface.co/blog/pollen-vision" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Experiments with Bitnet 1.5</Link>
+                        <Link to="https://huggingface.co/blog/joey00072/arxiv.org/abs/2402.17764" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2</Link>
+                        <Link to="https://github.com/joey00072/ohara/tree/master/experiments/bitnet" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3</Link>
                     </div>
 
                     {/* // Collaps menu 12 */}
@@ -609,7 +626,8 @@ export const Sidebar = () => {
                         Responsible AI
                     </Link>
                     <div className="collapse" id="collapsmenu-12">
-                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                        <Link to="https://youtube.com/playlist?list=PL8P_Z6C4GcuVMxhwT9JO_nKuW0QMSJ-cZ&si=vtxnKLMZwB8SGz6y" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Responses AI</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-responsible-ai/" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Readmore</Link>
                     </div>
 
                     {/* // Collaps menu 13 */}
@@ -769,10 +787,27 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 18 */}
-                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
-                    
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
+                    AGI 
                     </Link>
                     <div className="collapse" id="collapsmenu-18">
+                        <Link to="https://www.youtube.com/watch?v=yauNW4C-Tfo&ab_channel=MatthewBerman" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> OpenAI-backed "AGI ROBOT"</Link>
+                    </div>
+
+                    {/* // Collaps menu 19 */}
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-19" aria-expanded="false" aria-controls="collapsmenu-19">
+                    Explainable AI
+                    </Link>
+                    <div className="collapse" id="collapsmenu-19">
+                        <Link to="https://arxiv.org/pdf/1602.04938.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Explainable AI</Link>
+                        <Link to="https://arxiv.org/pdf/1704.02685.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Deep SHAP</Link>
+                    </div>
+
+                    {/* // Collaps menu 20 */}
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-20" aria-expanded="false" aria-controls="collapsmenu-20">
+                    
+                    </Link>
+                    <div className="collapse" id="collapsmenu-20">
                         <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
                     </div> */}
 
