@@ -568,7 +568,14 @@ export const Sidebar = () => {
                         Prompt engineering
                     </Link>
                     <div className="collapse" id="collapsmenu-9">
-                        <Link to="" target="_blank" className="list-group-item">Work in progress...</Link>
+                        <Link to="https://www.youtube.com/watch?v=xLNL6hSCPhc&ab_channel=AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Token Cost Reduction</Link>
+                        <Link to="https://www.promptingguide.ai/research/rag" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Prompting Guide</Link>
+                        <Link to="https://www.youtube.com/watch?v=YVWxbHJakgg&ab_channel=EntryPointAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> PE, RAG, and FT: when to use</Link>
+                        <Link to="https://www.youtube.com/watch?v=E9jWEmUSxyo&ab_channel=SkillCurb" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> How to Clone Any Voice </Link>
+                        <Link to="https://www.youtube.com/watch?v=4UsQxuhxB7c&ab_channel=SkillCurb" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> ChatGPT Vision API</Link>
+                        <Link to="https://www.youtube.com/watch?v=SEgwj6SVWyQ&ab_channel=ArizeAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Vibe-Based Prompt Engineering</Link>
+                        <Link to="https://www.youtube.com/watch?v=YaYaZu6NbS0&ab_channel=ArizeAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Prompt Templates, Functions and PWM</Link>
+                        <Link to="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> ChatGPT Prompt Engineering for Developers</Link>
                     </div>
 
                     {/* // Collaps menu 10 */}
@@ -694,10 +701,78 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 16 */}
-                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-16" aria-expanded="false" aria-controls="collapsmenu-16">
-                    
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-16" aria-expanded="false" aria-controls="collapsmenu-16">
+                        Free Courses
                     </Link>
                     <div className="collapse" id="collapsmenu-16">
+                        <Link to="https://course.fast.ai" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Jeremy Howard's Fastai</Link>
+                        <Link to="https://dl.ebooksworld.ir/books/Deep.Learning.for.Coders.with.fastai.and.PyTorch.Howard.Gugger.OReilly.9781492045526.EBooksWorld.ir.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> E-Book on DL and ML</Link>
+                        <Link to="https://huggingface.co/learn" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Learn by HuggingFace</Link>
+                        <Link to="https://huggingface.co/learn/cookbook" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Open-Source AI Cookbook</Link>
+                        <Link to="https://huggingface.co/learn/nlp-course" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> NLP Course</Link>
+                        <Link to="https://huggingface.co/learn/deep-rl-course" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Deep RL Course</Link>
+                        <Link to="https://huggingface.co/learn/audio-course" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Audio Course</Link>
+                        <Link to="https://docs.cohere.com/docs/llmu" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LLM University by cohere</Link>
+                        <Link to="https://fullstackdeeplearning.com/llm-bootcamp/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Full Stack LLM Bootcamp</Link>
+                        <Link to="https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LLM Bootcamp - spring 2023</Link>
+                        <Link to="https://www.youtube.com/@The_Full_Stack/videos" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> The Full Stack</Link>
+                        <Link to="https://github.com/the-full-stack/website" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Github Docs</Link>
+                        <Link to="https://www.youtube.com/watch?v=twHxmU9OxDU&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Lectures</Link>
+                        <Link to="https://youtu.be/JnBHR_yL2w8?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Learn to Spell: Prompt Engineering</Link>
+                        <Link to="https://youtu.be/Fquj2u7ay40?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLMOps</Link>
+                        <Link to="https://youtu.be/l5mG4z343qg?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> UX for Language User Interfaces</Link>
+                        <Link to="https://youtu.be/YdeuQhlHmCA?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Augmented Language Models</Link>
+                        <Link to="https://youtu.be/twHxmU9OxDU?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Launch an LLM App in One Hour</Link>
+                        <Link to="https://youtu.be/MyFrMFab6bo?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLM Foundations</Link>
+                        <Link to="https://www.youtube.com/watch?v=pUKs4xM1r5U&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&index=5&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Project Walkthrough: askFSDL</Link>
+                        <Link to="https://youtu.be/ax_R4yz1WwM?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> What's Next?</Link>
+                        <Link to="https://www.youtube.com/watch?v=l5mG4z343qg&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&index=6&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> UX for Language user interfaces</Link>
+                        <Link to="https://www.youtube.com/watch?v=54UThDl00qI&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&index=9&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fireside Chat with Peter Welinder</Link>
+                        <Link to="https://www.youtube.com/watch?v=DWUdGhRrv2c&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&index=10&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Harrison Chase: Agents</Link>
+                        <Link to="https://www.youtube.com/watch?v=roEKOzxilq4&list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ&index=11&pp=iAQB" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Reza Shabani: How To Train Your Own LLM</Link>
+                        <Link to="https://youtube.com/@machinelearninguniversity1942?si=pD5dszE0HTiOclcu" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> ML University by AWS</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2 Docs</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-accelerated-cv" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 3 Docs</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-accelerated-tab" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 4 Docs</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-dte" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 5 Docs</Link>
+                        <Link to="https://github.com/aws-samples/aws-machine-learning-university-responsible-ai" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 6 Docs</Link>
+                        <Link to="https://www.youtube.com/watch?v=dgs_9quxZXk&ab_channel=VenelinValkov" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Real-World PyTorch</Link>
+                        <Link to="https://github.com/curiousily/Get-Things-Done-with-Prompt-Engineering-and-LangChain" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Part 2 Docs</Link>
+                        <Link to="https://www.youtube.com/@cs50" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> CS50: Harvard University</Link>
+                        <Link to="https://magazine.sebastianraschka.com/archive" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Ahead of AI magazine</Link>
+                        <Link to="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> CS50: EDX.org</Link>
+                        <Link to="https://youtu.be/mEsleV16qdo?si=K4ZFHW2ZRG7EtL3Q" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Generative AI Full course - Gemini Pro</Link>
+                        <Link to="https://www.linkedin.com/company/the-aiedge-newsletter/posts/?feedView=all" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> The AiEdge</Link>
+                        <Link to="https://www.youtube.com/watch?v=UU1WVnMk4E8&t=24s" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Create LLM from Scratch</Link>
+                        <Link to="https://youtu.be/ScKCy2udln8" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Prompt Engineering for Web Devs</Link>
+                        <Link to="https://youtu.be/IA3WxTTPXqQ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deep Learning for Computer Vision</Link>
+                        <Link to="https://youtu.be/hDKCxebp88A" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> ML with Python and Scikit-Learn</Link>
+                        <Link to="https://youtu.be/-dJPoLm_gtE" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> MLOps Course</Link>
+                        <Link to="https://www.youtube.com/@code4AI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> code_your_own_AI</Link>
+                        <Link to="https://youtu.be/qpp1G0iEL_c" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> The Ethics of AI & ML</Link>
+                        <Link to="https://www.cloudskillsboost.google/paths/118" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Google Cloud Generative AI</Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link>
+                        <Link to="" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> </Link>
+                    </div>
+
+                    {/* // Collaps menu 17 */}
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-17" aria-expanded="false" aria-controls="collapsmenu-17">
+                        Must Read Blogs
+                    </Link>
+                    <div className="collapse" id="collapsmenu-17">
+                        <Link to="https://www.microsoft.com/en-us/research/blog/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Microsoft Resesrch Blog</Link>
+                        <Link to="https://k33g.hashnode.dev/series/ai-experiments" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Philippe Charrière's Blog</Link>
+                        <Link to="https://www.confident-ai.com/blog" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Confident AI blog</Link>
+                        <Link to="https://huggingface.co/blog" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Huggingface blog</Link>
+                        <Link to="https://blog.langchain.dev/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Langchain blog</Link>
+                        <Link to="https://www.llamaindex.ai/blog" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> LlamaIndex blog</Link>
+                    </div>
+
+                    {/* // Collaps menu 18 */}
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
+                    
+                    </Link>
+                    <div className="collapse" id="collapsmenu-18">
                         <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
                     </div> */}
 
