@@ -158,16 +158,12 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 5 */}
-                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-5" aria-expanded="false" aria-controls="collapsmenu-5">
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-5" aria-expanded="false" aria-controls="collapsmenu-5">
                         Inference Configuration
                     </Link>
                     <div className="collapse" id="collapsmenu-5">
-                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
-                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
-                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
-                        {/* <Link to="" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> </Link> */}
                         <Link to="" target="_blank" className="list-group-item">Work in progress...</Link>
-                    </div>
+                    </div> */}
 
                     {/* // Collaps menu 6 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-6" aria-expanded="false" aria-controls="collapsmenu-6">
