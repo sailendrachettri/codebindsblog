@@ -610,7 +610,11 @@ export const Sidebar = () => {
                         General ML, DL
                     </Link>
                     <div className="collapse" id="collapsmenu-13">
-                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                        <Link to="https://www.youtube.com/watch?v=-MTW39At8F0&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i>  Convert any problem into ML problem</Link>
+                        <Link to="https://www.youtube.com/watch?v=A8YqZKGRTAM&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Intro to Reinforcement Learning</Link>
+                        <Link to="https://www.youtube.com/watch?v=BGtSw0XNthY&ab_channel=RicardoCalix" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> A Simple GAN in PyTorch</Link>
+                        <Link to="https://www.youtube.com/@ricardocalix188/videos" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Learn More about ML and AI and Gen AI</Link>
+                        <Link to="https://github.com/afshinea/stanford-cs-230-deep-learning/blob/master/en/super-cheatsheet-deep-learning.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Super VIP Cheatsheet: Deep Learning</Link>
                     </div>
 
                     {/* // Collaps menu 14 */}
@@ -618,14 +622,82 @@ export const Sidebar = () => {
                         Recomanded Youtube Channels
                     </Link>
                     <div className="collapse" id="collapsmenu-14">
-                        <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
+                        <Link to="https://www.youtube.com/@MervinPraison" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Mervin Praison</Link>
+                        <Link to="https://www.youtube.com/@jamesbriggs" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> James Briggs</Link>
+                        <Link to="https://www.youtube.com/@AIAnytime" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Anytime</Link>
+                        <Link to="https://www.youtube.com/@AllAboutAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> All About AI</Link>
+                        <Link to="https://www.youtube.com/@samwitteveenai" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Sam Witteveen</Link>
+                        <Link to="https://www.youtube.com/@AutoGPTTutorial" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AutoGPT Tutorials</Link>
+                        <Link to="https://www.youtube.com/@AI-Makerspace" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Makerspace</Link>
+                        <Link to="https://www.youtube.com/@AssemblyAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AssemblyAI</Link>
+                        <Link to="https://www.youtube.com/@venelin_valkov" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Venelin Valkov</Link>
+                        <Link to="https://youtube.com/@TrelisResearch?si=We9ORBTjY3teMpq4" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Trelus Research</Link>
+                        <Link to="https://www.youtube.com/@ricardocalix188" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Ricardo Calix</Link>
+                        <Link to="https://youtube.com/@connorshorten6311?si=YA9lHWPqWaAdOtSy" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Connor Shorten</Link>
+                        <Link to="https://www.youtube.com/@juliensimonfr" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Julien Simon</Link>
+                        <Link to="https://www.youtube.com/@matthew_berman" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Matthew Berman</Link>
+                        <Link to="https://youtube.com/@datasciencebasics?si=7jtQNnu2ovM0p_ge" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> DataScience Basics</Link>
+                        <Link to="https://www.youtube.com/@TheAIEpiphany" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Aleksa Gordić - The AI Epiphany</Link>
+                        <Link to="https://youtube.com/@HeatonResearch?si=hfcA9vNxWsk05Uws" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Jeff Heaton</Link>
+                        <Link to="https://www.youtube.com/@engineerprompt" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Prompt Engineering</Link>
+                        <Link to="https://www.youtube.com/@intheworldofai" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> WorldofAI</Link>
+                        <Link to="https://youtube.com/@alejandro_ao?si=1TRHMqnIpQGUjJG6" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AlejzndroAO Software and AI</Link>
+                        <Link to="https://www.youtube.com/@arizeai/videos" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Arize AI</Link>
+                        <Link to="https://youtube.com/@learndatawithmark?si=Sf7QWUJd6Jn2K5CR" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Learn Data With Mark</Link>
+                        <Link to="https://www.youtube.com/@skillcurb" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> SkillCurb</Link>
+                        <Link to="https://www.youtube.com/@sethjuarez" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Seth Juarez</Link>
+                        <Link to="https://www.youtube.com/@NicholasRenotte/" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Nicholas Renotte</Link>
+                        <Link to="https://youtube.com/@technovangelist?si=UiLCumC6anKxbzB-" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Mat Williams</Link>
+                        <Link to="https://youtube.com/@IanWootten?si=4xbHzdFIIX7n9SMS" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Ian Wootten</Link>
+                        <Link to="https://youtube.com/@ai-for-devs?si=4TrsM8CP7VBO-2a" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI for Devs</Link>
+                        <Link to="https://www.youtube.com/@code4AI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> code_your_own_AI</Link>
+                        <Link to="https://www.youtube.com/@howardjeremyp" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Jeremy Howard</Link>
+                        <Link to="https://www.youtube.com/@leonsaiagency" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Leon Explains AI</Link>
+                        <Link to="https://www.youtube.com/@AppOfTheDay" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Skill Leap AI</Link>
+                        <Link to="https://www.youtube.com/@aifluxchannel" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Flux</Link>
+                        <Link to="https://www.youtube.com/@AIJasonZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Jason</Link>
+                        <Link to="https://www.youtube.com/@abhishekkrthakur" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Abhishek Thakur</Link>
+                        <Link to="https://youtube.com/@decoder-sh?si=OtRKUHqzVgSDT8BC" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Decoder</Link>
+                        <Link to="https://www.youtube.com/@fahdmirza" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Fahd Mirza</Link>
+                        <Link to="https://www.youtube.com/@GaoDalie97" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Gao Dalie</Link>
+                        <Link to="https://www.youtube.com/@yeyulab" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Yeyu Lab</Link>
+                        <Link to="https://www.youtube.com/@EntryPointAI" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Entry Point AI</Link>
+                        <Link to="https://www.youtube.com/@Steve8708" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Steve (Builder.io)</Link>
+                        <Link to="https://youtu.be/VMj-3S1tku0?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Andrej Karpathy</Link>
+                        <Link to="https://www.youtube.com/@aiDotEngineer" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Engineer</Link>
+                        <Link to="https://www.youtube.com/@kurdiez_en" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Kurdiez</Link>
+                        <Link to="https://www.youtube.com/@WhisperingAI/videos" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Whispering AI</Link>
+                        <Link to="https://www.youtube.com/@ShawhinTalebi" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Shaw Talebi</Link>
+                        <Link to="https://www.youtube.com/@DataIndependent" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Greg Kamradt (Data Indy)</Link>
+                        <Link to="https://youtube.com/@deciai?si=udeFtVlH6uTJYMfo" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deci Ai</Link>
+                        <Link to="https://www.youtube.com/@robmulla" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Rob Mulla</Link>
+                        <Link to="https://edwardjhu.com/" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Edward Hu</Link>
+                        <Link to="https://youtube.com/@deployingai?si=pXZDOETUDdqiB_9I" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Deploying AI</Link>
+                        <Link to="https://www.youtube.com/@llmware/videos" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> llmware</Link>
+                        <Link to="https://www.youtube.com/@DataInsightEdge01" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> DataInsightEdge</Link>
+                        <Link to="https://www.youtube.com/@llmware" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> LLmware</Link>
+                        <Link to="https://www.youtube.com/@aipapersacademy" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> AI Papers Academy</Link>
+                        <Link to="https://youtube.com/@Predibase?si=HbdO89yPruuKJp6I" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Predibase</Link>
+                        <Link to="https://youtube.com/@jakeeh?si=m1gSOQIkJbhPxJmt" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> JakeEh</Link>
+                        <Link to="https://www.youtube.com/@underfitted" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Underfitted</Link>
+                        <Link to="https://www.youtube.com/@nodematic/" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Nodematic Tutorials</Link>
+                        <Link to="https://www.youtube.com/@superlazycoder1984/" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> Super Lazy Coder</Link>
                     </div>
 
                     {/* // Collaps menu 15 */}
-                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
-                    
+                    <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
+                    Metrics for Evaluation
                     </Link>
                     <div className="collapse" id="collapsmenu-15">
+                        <Link to="https://huggingface.co/metrics" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> All metrics on Hugging Face Hub</Link>
+                        <Link to="https://github.com/openai/openai-cookbook/tree/main" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> OpenAI Cook Book</Link>
+                    </div>
+
+                    {/* // Collaps menu 16 */}
+                    {/* <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-16" aria-expanded="false" aria-controls="collapsmenu-16">
+                    
+                    </Link>
+                    <div className="collapse" id="collapsmenu-16">
                         <Link to="" target="_blank" className="list-group-item">Work in Progress...</Link>
                     </div> */}
 

@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import { Homepage } from './components/Homepage';
 import { Navbar } from './components/Navbar';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -8,6 +9,7 @@ function App() {
     <>
     <Navbar />
     <Homepage />
+    <Footer />
     </>
   );
 }
