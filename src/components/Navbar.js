@@ -1,7 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
+    // variables
+    const navigate = useNavigate();
+
+    // methods
+    const handleLogout = ()=>{
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('current_user');
+        navigate("/login");
+    }
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3">
@@ -36,7 +45,13 @@ export const Navbar = () => {
                             </li> */}
                         </ul>
                         <div className='d-flex align-items-center'>
-                            <span className='px-3'>Welcome, <span className='text-success fw-bold'>Guest</span></span>
+                           { !(localStorage.getItem('auth_token')) ?<span>
+                                <Link to="/login" className='btn btn-outline-primary mx-2'>Login</Link>
+                                <Link to="/register" className='btn btn-outline-primary mx-2'>Register</Link>
+                            </span>
+                            : <button className='btn btn-outline-primary mx-2' onClick={handleLogout}>Logout</button>
+                           }
+                            <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{localStorage.getItem('current_user') ? localStorage.getItem('current_user') : "Guest" }</span></span>
                             <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'>Fork on Github</Link>
                         </div>
                     </div>
