@@ -15,7 +15,7 @@ export const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">LearnLLM</Link>
+                    <Link className="navbar-brand" to="/"><i class="bi bi-boxes"></i> LearnLLM</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -46,13 +46,13 @@ export const Navbar = () => {
                         </ul>
                         <div className='d-flex align-items-center'>
                            { !(localStorage.getItem('auth_token')) ?<span>
-                                <Link to="/login" className='btn btn-outline-primary mx-2'>Login</Link>
-                                <Link to="/register" className='btn btn-outline-primary mx-2'>Register</Link>
+                                <Link to="/login" className='btn btn-outline-dark mx-2'>Login</Link>
+                                <Link to="/register" className='btn btn-outline-dark mx-2'>Register</Link>
                             </span>
-                            : <button className='btn btn-outline-primary mx-2' onClick={handleLogout}>Logout</button>
+                            : <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
                            }
                             <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{localStorage.getItem('current_user') ? localStorage.getItem('current_user') : "Guest" }</span></span>
-                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'>Fork on Github</Link>
+                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'><i class="bi bi-github"></i> Fork on Github</Link>
                         </div>
                     </div>
                 </div>
