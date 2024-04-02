@@ -5,7 +5,7 @@ import { Cards } from './Cards'
 export const Homepage = () => {
     return (
         <>
-            <div class="container-fluid row justify-content-center">
+            <div className="container-fluid row justify-content-center">
                 <div className="col-sm-10 col-md-3">
                     <Sidebar />
                 </div>

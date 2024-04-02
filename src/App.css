@@ -1,0 +1,76 @@
+:root {
+    --bg-color: rgb(37, 82, 179);
+    --text-color-light: whitesmoke;
+    --text-color-black: black;
+    --text-color-dark: rgb(37, 82, 179);
+    --border-color: rgb(37 82 179 / 34%);
+    --box-color: rgb(249 249 249);
+    --para-font: "Glory", sans-serif;
+    --heading-font: "Glory", sans-serif;
+    --box-shadow: 2px 2px 4px 2px whitesmoke;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color-light);
+    font-family: var(--para-font);
+  }
+
+/* ----------------------LOGIN STYLE STARTED---------------------- */
+.login-signup-form {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  
+  .login-signup-form h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .login-signup-form div {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+  
+  .login-signup-form label {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  
+  .login-signup-form input {
+    font-size: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 2px;
+    color: var(--text-color-dark);
+  }
+  
+  .login-signup-form button {
+    margin: 1rem 0;
+  }
+  
+  .login-signup-form p {
+    margin: 1rem 0;
+  }
+  
+  /* ----------------------LOGIN STYLE ENDED---------------------- */
