@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { environment } from "../environment";
 import { toast } from 'react-toastify';
 
-export default function Register() {
+export default function Register(props) {
     let navigate = useNavigate();
 
     // state variables
@@ -13,6 +13,8 @@ export default function Register() {
     async function handleSubmit(e) {
         e.preventDefault();
 
+        props.setProgress(34)
+
         let URL = "http://localhost:5000"; // default is 
 
         if (environment === 'prod')
@@ -21,7 +23,7 @@ export default function Register() {
         const { username, password, cpassword, phone } = credentials;
 
         try {
-
+            props.setProgress(54)
 
             const response = await fetch(`${URL}/api/auth/register`, {
                 method: 'POST',
@@ -33,6 +35,8 @@ export default function Register() {
 
             const data = await response.json();
 
+            props.setProgress(74)
+
             if (data.success) {
                 toast.success(`Thank you ${username} for registration.`);
 
@@ -40,13 +44,16 @@ export default function Register() {
                 localStorage.setItem('current_user', data.username);
 
                 setCredentials({ username: "", password: "", cpassword: "", phone: "" });
+                props.setProgress(100)
                 navigate("/");
 
             } else {
+                props.setProgress(100)
                 toast.error(data.message);
                 setLoading("Register")
             }
         } catch (error){
+            props.setProgress(100)
             setLoading("Register")
             toast.error("Internal server error. Please try again later.");
         }
