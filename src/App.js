@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <ToastContainer />
-    <LoadingBar color='#0382D5' progress={progress} onLoaderFinished={() => setProgress(progress)} />
+    <LoadingBar color='black' shadow="true" height={4} loaderSpeed={1000}  progress={progress} onLoaderFinished={() => setProgress(progress)} />
     <Navbar setProgress={setProgress} />
       <Routes>
         <Route  path='/login' element={<Login setProgress={setProgress} />} />
