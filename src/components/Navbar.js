@@ -30,7 +30,7 @@ export const Navbar = (props) => {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/" onClick={handleProgress}><i class="bi bi-boxes"></i> LearnLLM</Link>
+                    <Link className="navbar-brand" to="/" onClick={handleProgress}><i className="bi bi-boxes"></i> LearnLLM</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -67,7 +67,7 @@ export const Navbar = (props) => {
                             : <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
                            }
                             <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{localStorage.getItem('current_user') ? localStorage.getItem('current_user') : "Guest" }</span></span>
-                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'><i class="bi bi-github"></i> Fork on Github</Link>
+                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'><i className="bi bi-github"></i> Fork on Github</Link>
                         </div>
                     </div>
                 </div>

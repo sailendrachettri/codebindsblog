@@ -43,7 +43,7 @@ export default function Login(props) {
             props.setProgress(80);
 
             const data = await response.json();
-            console.log(data)
+            console.log("data ", data)
 
             if (data.success) {
                 setCredentials({username: "", password : ""})
@@ -66,6 +66,7 @@ export default function Login(props) {
 
         } catch (error) {
             props.setProgress(100);
+            console.log(error);
             
             setLoading("Login")
             toast.error("Internal server error. Please try again later.");
