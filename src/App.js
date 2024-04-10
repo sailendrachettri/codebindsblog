@@ -11,7 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react';
-import { UserContextProvider } from './UserContext';
+import CreatePost from './components/CreatePost';
 
 function App() {
   //react hooks
@@ -25,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login setProgress={setProgress} />} />
           <Route path='/register' element={<Register setProgress={setProgress} />} />
+          <Route path='/create' element={<CreatePost     />} />
           <Route path='/' element={<Homepage setProgress={setProgress} />} />
         </Routes>
       <Footer />

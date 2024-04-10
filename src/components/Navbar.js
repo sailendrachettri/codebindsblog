@@ -8,7 +8,6 @@ export const Navbar = (props) => {
     // variables
     const navigate = useNavigate();
 
-
     // ----------------------------METHODS----------------------------
     // get the looged in user information
     useEffect(() => {
@@ -37,7 +36,6 @@ export const Navbar = (props) => {
 
     // sometimes username can be null so for that questino mark
     let username = userInfo?.username;
-    console.log("username in navbar: ", username)
 
     // illusion for loading progress
     const handleProgress = () => {
@@ -79,7 +77,7 @@ export const Navbar = (props) => {
                             {
                                 username && (
                                     <>
-                                        <Link to='/create'>Create new Post</Link>
+                                        <Link to='/create' className='btn btn-dark mx-2'>Create new Post</Link>
                                         <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
                                         <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{username}</span></span>
                                     </>

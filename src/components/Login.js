@@ -46,14 +46,11 @@ export default function Login(props) {
                 response.json().then(userInfo =>{
                     setUserInfo(userInfo);
                     navigate("/");
-                    console.log("userInfo in login: ", userInfo)
                 })
 
                 toast.success("Logged in successfully!");
                 
                 props.setProgress(100);
-                
-
 
             } else {
                 props.setProgress(100);
@@ -64,7 +61,6 @@ export default function Login(props) {
 
         } catch (error) {
             props.setProgress(100);
-            console.log(error);
             
             setLoading("Login")
             toast.error("Internal server error. Please try again later.");
