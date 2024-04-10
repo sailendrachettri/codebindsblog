@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import SinglePost from './SinglePost'
+import SinglePost from './Card'
 
 export const Cards = () => {
     // variables

@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react';
 import CreatePost from './components/CreatePost';
+import CardDetails from './components/CardDetails';
 
 function App() {
   //react hooks
@@ -25,7 +26,8 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login setProgress={setProgress} />} />
           <Route path='/register' element={<Register setProgress={setProgress} />} />
-          <Route path='/create' element={<CreatePost     />} />
+          <Route path='/create' element={<CreatePost />} />
+          <Route path='/card/:id' element={<CardDetails />} />
           <Route path='/' element={<Homepage setProgress={setProgress} />} />
         </Routes>
       <Footer />
