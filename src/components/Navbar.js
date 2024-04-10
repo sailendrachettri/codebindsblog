@@ -35,7 +35,9 @@ export const Navbar = (props) => {
         navigate("/login");
     }
 
-    const username = userInfo?.username;
+    // sometimes username can be null so for that questino mark
+    let username = userInfo?.username;
+    console.log("username in navbar: ", username)
 
     // illusion for loading progress
     const handleProgress = () => {

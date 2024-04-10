@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { environment } from "../environment";
 import { toast } from 'react-toastify';
+import { UserContext } from '../UserContext';
 
 export default function Login(props) {
     
     const navigate = useNavigate();
     const [credentials, setCredentials] = useState({ username: "", password: "" });
     const [loading, setLoading] = useState("Login");
+    const {setUserInfo} = useContext(UserContext);
 
     function onChange(e) {
         setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -29,39 +31,35 @@ export default function Login(props) {
             URL = "https://gtraveller-server.onrender.com";
 
         const { username, password } = credentials;
-
-        console.log("mer here1 ");
         try {
             props.setProgress(30);
             const response = await fetch(`${URL}/api/auth/login`, {
                 method: 'POST',
-                headers: {
-                    'Content-type': 'application/json'
-                },
+                body: JSON.stringify({username, password}),
+                headers: {'Content-Type': 'application/json'},
                 credentials: 'include',
-                body: JSON.stringify({ username, password })
             })
             props.setProgress(80);
 
-            const data = await response.json();
-            if (data.success) {
-                console.log("mer here");
-                setCredentials({username: "", password : ""})
-                toast.success("Logged in successfully!");
+            
+            if (response.ok) {
+                response.json().then(userInfo =>{
+                    setUserInfo(userInfo);
+                    navigate("/");
+                    console.log("userInfo in login: ", userInfo)
+                })
 
-                // save the auth-token and redirect
-                localStorage.setItem('auth_token', data.auth_token); 
-                localStorage.setItem('current_user', data.username); 
+                toast.success("Logged in successfully!");
                 
                 props.setProgress(100);
-                navigate("/");
+                
 
 
             } else {
                 props.setProgress(100);
 
                 setLoading("Login")
-                toast.error(data.message);
+                toast.error("Something went wrong!");
             }
 
         } catch (error) {
@@ -72,6 +70,8 @@ export default function Login(props) {
             toast.error("Internal server error. Please try again later.");
         }
     }
+
+
 
     return (
         <>

@@ -22,13 +22,11 @@ function App() {
       <ToastContainer />
       <LoadingBar color='black' shadow="true" height={4} loaderSpeed={1000} progress={progress} onLoaderFinished={() => setProgress(progress)} />
       <Navbar setProgress={setProgress} />
-      <UserContextProvider>
         <Routes>
           <Route path='/login' element={<Login setProgress={setProgress} />} />
           <Route path='/register' element={<Register setProgress={setProgress} />} />
           <Route path='/' element={<Homepage setProgress={setProgress} />} />
         </Routes>
-      </UserContextProvider>
       <Footer />
     </>
   );
