@@ -30,7 +30,7 @@ export default function Login(props) {
 
         const { username, password } = credentials;
 
-        
+        console.log("mer here1 ");
         try {
             props.setProgress(30);
             const response = await fetch(`${URL}/api/auth/login`, {
@@ -38,14 +38,14 @@ export default function Login(props) {
                 headers: {
                     'Content-type': 'application/json'
                 },
+                credentials: 'include',
                 body: JSON.stringify({ username, password })
             })
             props.setProgress(80);
 
             const data = await response.json();
-            console.log("data ", data)
-
             if (data.success) {
+                console.log("mer here");
                 setCredentials({username: "", password : ""})
                 toast.success("Logged in successfully!");
 

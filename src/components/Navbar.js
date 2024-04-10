@@ -1,31 +1,51 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { UserContext } from '../UserContext';
 
 export const Navbar = (props) => {
+    const {userInfo, setUserInfo} = useContext(UserContext);
 
     // variables
     const navigate = useNavigate();
 
 
-    // methods
-    const handleLogout = ()=>{
-        localStorage.removeItem('auth_token');
-        localStorage.removeItem('current_user');
+    // ----------------------------METHODS----------------------------
+    // get the looged in user information
+    useEffect(() => {
+        fetch('http://localhost:5000/api/auth/profile', {
+            credentials: 'include',
+             
+        }).then(response => {
+            response.json().then(userDoc => {
+                setUserInfo(userDoc)
+            });
+        });
+    }, []);
 
+    const handleLogout = () => {
+
+        fetch('http://localhost:5000/api/auth/logout', {
+            credentials: 'include',
+            method : 'POST'
+        })
+        
         handleProgress();
+        setUserInfo(null);
 
         navigate("/login");
     }
 
+    const username = userInfo?.username;
+
     // illusion for loading progress
-    const handleProgress = () =>{
+    const handleProgress = () => {
         props.setProgress(15);
 
         setTimeout(() => {
             props.setProgress(100)
         }, 500);
     }
-    
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3">
@@ -42,31 +62,27 @@ export const Navbar = (props) => {
                             <li className="nav-item">
                                 <Link className="nav-link" target='_blank' to="https://github.com/parthaPRay/LLM-Learning-Sources">Original Docs</Link>
                             </li>
-                            {/* <li className="nav-item">
-                                <Link className="nav-link" to="#"></Link>
-                            </li> */}
-                            {/* <li className="nav-item dropdown">
-                                <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="#">Blogs</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Articles</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Downloads</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Youtube channels</Link></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><Link className="dropdown-item" to="#">Documentations</Link></li>
-                                </ul>
-                            </li> */}
                         </ul>
                         <div className='d-flex align-items-center'>
-                           { !(localStorage.getItem('auth_token')) ?<span>
-                                <Link to="/login" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Login</Link>
-                                <Link to="/register" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Register</Link>
-                            </span>
-                            : <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
-                           }
-                            <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{localStorage.getItem('current_user') ? localStorage.getItem('current_user') : "Guest" }</span></span>
+                            {
+                                !username && (
+                                    <>
+                                        <Link to="/login" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Login</Link>
+                                        <Link to="/register" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Register</Link>
+                                    </>
+                                )
+                                
+                            }
+
+                            {
+                                username && (
+                                    <>
+                                        <Link to='/create'>Create new Post</Link>
+                                        <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
+                                        <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{username}</span></span>
+                                    </>
+                                )
+                            }
                             <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'><i className="bi bi-github"></i> Fork on Github</Link>
                         </div>
                     </div>
