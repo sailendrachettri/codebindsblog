@@ -16,6 +16,7 @@ const CardDetails = () => {
         fetch(`${SERVER_URL}/api/post/card/${id}`).then(response => {
             response.json().then(postInfo => {
                 setPostInfo(postInfo);
+                console.log("postInfo: ", postInfo);
             })
         })
     }, [id]);
@@ -24,6 +25,7 @@ const CardDetails = () => {
 
     // get the information from postInfo
     const { cover, title, content, createdAt, _id } = postInfo;
+    console.log("_id: ", _id)
 
     return (
         <div className='container my-4' id='post-page'>
@@ -33,7 +35,7 @@ const CardDetails = () => {
                 <span className='text-secondary px-4'>{dateFormat(createdAt, "dddd mmm d, yyyy")}</span>
 
                 {
-                    userInfo.id === postInfo.author._id && (
+                    userInfo?.id === postInfo.author?._id && (
                         <Link to={`/edit/${_id}`} className='btn btn-dark'><i class="bi bi-pencil-square"></i> Edit this page </Link>
                     )
                 }

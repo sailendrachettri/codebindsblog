@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import dateFormat from 'dateformat'
 
-const SinglePost = ({_id, title, summary, createdAt}) => {
+const Card = ({_id, title, summary, createdAt}) => {
   return (
     <>
       <div className="card border-secondary mb-3 mx-2" style={{ maxWidth: "18rem" }}>
@@ -16,4 +16,4 @@ const SinglePost = ({_id, title, summary, createdAt}) => {
   )
 }
 
-export default SinglePost
+export default Card

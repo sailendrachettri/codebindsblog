@@ -6,9 +6,9 @@ export const Sidebar = () => {
         <>
             <div className="mt-4">
                 <ul className="list-group">
-                <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-0" aria-expanded="false" aria-controls="collapsmenu-0">
-                        Quick Menu
-                    </Link>
+                    <div className="list-group-item border bg-dark text-light">
+                    <i className="bi bi-menu-button-wide"></i> Accordion menu 
+                    </div>
 
                     {/* // Collaps menu 1 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-1" aria-expanded="false" aria-controls="collapsmenu-1">
@@ -710,7 +710,7 @@ export const Sidebar = () => {
 
                     {/* // Collaps menu 15 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
-                    Metrics for Evaluation
+                        Metrics for Evaluation
                     </Link>
                     <div className="collapse" id="collapsmenu-15">
                         <Link to="https://huggingface.co/metrics" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> All metrics on Hugging Face Hub</Link>
@@ -787,7 +787,7 @@ export const Sidebar = () => {
 
                     {/* // Collaps menu 18 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
-                    AGI 
+                        AGI
                     </Link>
                     <div className="collapse" id="collapsmenu-18">
                         <Link to="https://www.youtube.com/watch?v=yauNW4C-Tfo&ab_channel=MatthewBerman" target="_blank" className="list-group-item"><i className='bi bi-youtube'></i> OpenAI-backed "AGI ROBOT"</Link>
@@ -795,7 +795,7 @@ export const Sidebar = () => {
 
                     {/* // Collaps menu 19 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-19" aria-expanded="false" aria-controls="collapsmenu-19">
-                    Explainable AI
+                        Explainable AI
                     </Link>
                     <div className="collapse" id="collapsmenu-19">
                         <Link to="https://arxiv.org/pdf/1602.04938.pdf" target="_blank" className="list-group-item"><i className='bi bi-book-half'></i> Explainable AI</Link>

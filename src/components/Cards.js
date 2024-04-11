@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import SinglePost from './Card'
+import Card from './Card'
 import { SERVER_URL } from '../environment';
 
 export const Cards = () => {
@@ -24,7 +24,7 @@ export const Cards = () => {
                 
                 {
                     posts.length > 0  && posts.map((post, i) =>(
-                        <SinglePost {...post} key={i} />
+                        <Card {...post} key={i} />
                     ))
                 }
             </div >

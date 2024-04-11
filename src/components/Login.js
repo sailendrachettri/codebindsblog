@@ -77,7 +77,7 @@ export default function Login(props) {
 
                     <button type='submit' onClick={handleLoading}>{loading}</button>
 
-                    <p>This portol is only for authors!</p>
+                    <p className='text-danger'>Restricted Access: Authors Only!</p>
                 </div>
             </form>
         </>
