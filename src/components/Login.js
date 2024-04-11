@@ -72,7 +72,7 @@ export default function Login(props) {
     return (
         <>
             <form className='login-signup-form' onSubmit={handleSubmit}>
-                <h1>Welcome Back Author</h1>
+                <h1>Welcome Author</h1>
                 <div>
                     <label htmlFor="username">Username:</label>
                     <input type="text" id="username" name="username" value={credentials.username} onChange={onChange} required />

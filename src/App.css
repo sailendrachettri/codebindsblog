@@ -108,6 +108,7 @@ button {
 
 .post-content p{
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 #post-page .post-content img{
