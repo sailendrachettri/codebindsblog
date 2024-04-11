@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Editor from '../Editor';
 import { toast } from 'react-toastify'
+import { SERVER_URL } from '../environment';
 
 const CardEdit = () => {
     const { id } = useParams();
@@ -15,7 +16,7 @@ const CardEdit = () => {
 
     // fetch the user content
     useEffect(() => {
-        fetch('http://localhost:5000/api/post/card/' + id)
+        fetch(`${SERVER_URL}/api/post/card/${id}`)
             .then(response => {
                 response.json().then(postInfo => {
                     setTitle(postInfo.title);
@@ -42,7 +43,7 @@ const CardEdit = () => {
         try {
 
             // now put the edited content in database
-            const response = await fetch('http://localhost:5000/api/post/edit', {
+            const response = await fetch(`${SERVER_URL}/api/post/edit`, {
                 method: 'PUT',
                 body: data,
                 credentials: 'include'

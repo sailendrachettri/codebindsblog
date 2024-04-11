@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserContext } from '../UserContext';
+import { SERVER_URL } from '../environment';
 
 export const Navbar = (props) => {
     const {userInfo, setUserInfo} = useContext(UserContext);
@@ -11,7 +12,7 @@ export const Navbar = (props) => {
     // ----------------------------METHODS----------------------------
     // get the looged in user information
     useEffect(() => {
-        fetch('http://localhost:5000/api/auth/profile', {
+        fetch(`${SERVER_URL}/api/auth/profile`, {
             credentials: 'include',
              
         }).then(response => {
@@ -23,7 +24,7 @@ export const Navbar = (props) => {
 
     const handleLogout = () => {
 
-        fetch('http://localhost:5000/api/auth/logout', {
+        fetch(`${SERVER_URL}/api/auth/logout`, {
             credentials: 'include',
             method : 'POST'
         })

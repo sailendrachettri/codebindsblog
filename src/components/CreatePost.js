@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom' 
 import Editor from '../Editor';
+import { SERVER_URL } from '../environment';
 
 const CreatePost = () => {
     const navigate = useNavigate();
@@ -20,7 +21,7 @@ const CreatePost = () => {
         data.set('file', files[0]);
 
 
-        const response = await fetch('http://localhost:5000/api/post/create', {
+        const response = await fetch(`${SERVER_URL}/api/post/create`, {
             method: 'POST',
             body: data, 
             credentials: 'include'

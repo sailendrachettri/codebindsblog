@@ -1,1 +1,1 @@
-export const environment = "dev";
+export const SERVER_URL = 'http://localhost:5000';

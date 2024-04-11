@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SinglePost from './Card'
+import { SERVER_URL } from '../environment';
 
 export const Cards = () => {
     // variables
@@ -8,7 +9,7 @@ export const Cards = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/post/fetchpost').then(response => {
+        fetch(`${SERVER_URL}/api/post/fetchpost`).then(response => {
             response.json().then(posts => {
                 setPosts(posts);
             });

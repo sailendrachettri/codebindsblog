@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { environment } from "../environment";
+import { SERVER_URL } from "../environment";
 import { toast } from 'react-toastify';
 import { UserContext } from '../UserContext';
 
@@ -25,15 +25,10 @@ export default function Login(props) {
 
         props.setProgress(10);
 
-        let URL = "http://localhost:5000"; // default is local
-
-        if(environment === 'prod')
-            URL = "https://gtraveller-server.onrender.com";
-
         const { username, password } = credentials;
         try {
             props.setProgress(30);
-            const response = await fetch(`${URL}/api/auth/login`, {
+            const response = await fetch(`${SERVER_URL}/api/auth/login`, {
                 method: 'POST',
                 body: JSON.stringify({username, password}),
                 headers: {'Content-Type': 'application/json'},
@@ -82,7 +77,7 @@ export default function Login(props) {
 
                     <button type='submit' onClick={handleLoading}>{loading}</button>
 
-                    <p>Only author should login!</p>
+                    <p>This portol is only for authors!</p>
                 </div>
             </form>
         </>

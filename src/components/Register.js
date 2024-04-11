@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
-import { environment } from "../environment";
+import { SERVER_URL } from "../environment";
 import { toast } from 'react-toastify';
 
 export default function Register(props) {
@@ -15,17 +15,13 @@ export default function Register(props) {
 
         props.setProgress(34)
 
-        let URL = "http://localhost:5000"; // default is 
-
-        if (environment === 'prod')
-            URL = "https://gtraveller-server.onrender.com";
 
         const { username, password, cpassword, phone } = credentials;
 
         try {
             props.setProgress(54)
 
-            const response = await fetch(`${URL}/api/auth/register`, {
+            const response = await fetch(`${SERVER_URL}/api/auth/register`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

@@ -9,7 +9,7 @@ const SinglePost = ({_id, title, summary, createdAt}) => {
         <Link to={`/card/${_id}`} className="card-header text-primary text-decoration-none">{title}<i className="bi bi-hand-index-thumb"></i> </Link>
         <div className="card-body text-secondary">
           <p className="card-text">{(summary.length < 150) ? summary : summary.substring(0, 150) + "..." }</p>
-          <p className="card-text">{dateFormat(createdAt, "mmm d, yyyy")}</p>
+          <p className="card-text">{dateFormat(createdAt, "mmmm d, yyyy")}</p>
         </div>
       </div>
     </>

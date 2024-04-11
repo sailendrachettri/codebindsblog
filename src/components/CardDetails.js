@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { UserContext } from '../UserContext'
 import dateFormat from 'dateformat'
 
+const {SERVER_URL} = require('../environment');
+
 const CardDetails = () => {
     const { id } = useParams();
     const { userInfo } = useContext(UserContext)
@@ -11,7 +13,7 @@ const CardDetails = () => {
     const [postInfo, setPostInfo] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/post/card/${id}`).then(response => {
+        fetch(`${SERVER_URL}/api/post/card/${id}`).then(response => {
             response.json().then(postInfo => {
                 setPostInfo(postInfo);
             })
@@ -25,7 +27,7 @@ const CardDetails = () => {
 
     return (
         <div className='container my-4' id='post-page'>
-            <img src={`http://localhost:5000/${cover}`} alt='Cover' className='img-fluid' id='post-cover' />
+            <img src={`${SERVER_URL}/${cover}`} alt='Cover' className='img-fluid' id='post-cover' />
 
             <div className='my-4'>
                 <span className='text-secondary px-4'>{dateFormat(createdAt, "dddd mmm d, yyyy")}</span>
