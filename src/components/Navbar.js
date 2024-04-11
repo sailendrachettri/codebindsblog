@@ -19,7 +19,7 @@ export const Navbar = (props) => {
                 setUserInfo(userDoc)
             });
         });
-    }, []);
+    }, [setUserInfo]);
 
     const handleLogout = () => {
 
@@ -83,7 +83,7 @@ export const Navbar = (props) => {
                                     </>
                                 )
                             }
-                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark'><i className="bi bi-github"></i> Fork on Github</Link>
+                            <Link to="https://github.com/sailendrachettri/llm-resources" target='_blank' className='text-decoration-none text-dark mx-2'><i className="bi bi-github"></i> Fork on Github</Link>
                         </div>
                     </div>
                 </div>

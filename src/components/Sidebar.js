@@ -6,6 +6,9 @@ export const Sidebar = () => {
         <>
             <div className="mt-4">
                 <ul className="list-group">
+                <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-0" aria-expanded="false" aria-controls="collapsmenu-0">
+                        Quick Menu
+                    </Link>
 
                     {/* // Collaps menu 1 */}
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-1" aria-expanded="false" aria-controls="collapsmenu-1">

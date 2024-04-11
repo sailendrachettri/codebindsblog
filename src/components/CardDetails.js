@@ -16,16 +16,16 @@ const CardDetails = () => {
                 setPostInfo(postInfo);
             })
         })
-    }, []);
+    }, [id]);
 
     if (!postInfo) return "No post information available yet!";
 
     // get the information from postInfo
-    const { cover, author, title, content, createdAt, _id } = postInfo;
+    const { cover, title, content, createdAt, _id } = postInfo;
 
     return (
         <div className='container my-4' id='post-page'>
-            <img src={`http://localhost:5000/${cover}`} className='img-fluid' id='post-cover' />
+            <img src={`http://localhost:5000/${cover}`} alt='Cover' className='img-fluid' id='post-cover' />
 
             <div className='my-4'>
                 <span className='text-secondary px-4'>{dateFormat(createdAt, "dddd mmm d, yyyy")}</span>

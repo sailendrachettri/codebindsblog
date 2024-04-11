@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { environment } from "../environment";
 import { toast } from 'react-toastify';
 import { UserContext } from '../UserContext';
@@ -82,7 +82,7 @@ export default function Login(props) {
 
                     <button type='submit' onClick={handleLoading}>{loading}</button>
 
-                    {/* <p>Don't have an account yet? <Link to="/register"> Register </Link></p> */}
+                    <p>Only author should login!</p>
                 </div>
             </form>
         </>

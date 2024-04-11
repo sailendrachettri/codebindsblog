@@ -23,7 +23,7 @@ const CardEdit = () => {
                     setContent(postInfo.content);
                 })
             })
-    }, []);
+    }, [id]);
 
     // methods
     const updatePost = async (e) => {
