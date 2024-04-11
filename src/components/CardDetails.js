@@ -1,40 +1,48 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import {UserContext} from '../UserContext'
+import { UserContext } from '../UserContext'
+import dateFormat from 'dateformat'
 
 const CardDetails = () => {
-    const {id} = useParams();
-    const {userInfo} = useContext(UserContext)
+    const { id } = useParams();
+    const { userInfo } = useContext(UserContext)
 
     // hooks
     const [postInfo, setPostInfo] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/post/card/${id}`).then(response =>{
-            response.json().then(postInfo =>{
+        fetch(`http://localhost:5000/api/post/card/${id}`).then(response => {
+            response.json().then(postInfo => {
                 setPostInfo(postInfo);
             })
         })
     }, []);
 
-    if(!postInfo) return "No post information available yet!";
+    if (!postInfo) return "No post information available yet!";
 
     // get the information from postInfo
-    const {cover, author, title, content, createdAt, _id} = postInfo;
+    const { cover, author, title, content, createdAt, _id } = postInfo;
 
     return (
-        <div className='container'>
-        <img src={`http://localhost:5000/${cover}`} />
-        <div>Author: {author.username} Date: {createdAt}</div> 
-        
-        {
-        userInfo.id === postInfo.author._id && (
-            <Link to={`/edit/${_id}`} className='btn btn-dark'><i class="bi bi-pencil-square"></i> Edit this page </Link> 
-        )
-        }
-        <div>{title}</div> 
-        <div dangerouslySetInnerHTML={{__html: content}} />
-        
+        <div className='container my-4' id='post-page'>
+            <img src={`http://localhost:5000/${cover}`} className='img-fluid' id='post-cover' />
+
+            <div className='my-4'>
+                <span className='text-secondary px-4'>{dateFormat(createdAt, "dddd mmm d, yyyy")}</span>
+
+                {
+                    userInfo.id === postInfo.author._id && (
+                        <Link to={`/edit/${_id}`} className='btn btn-dark'><i class="bi bi-pencil-square"></i> Edit this page </Link>
+                    )
+                }
+            </div>
+
+
+            <div className='h1 my-4 text-center page-title'>{title}</div>
+            <span className='post-content'>
+                <div dangerouslySetInnerHTML={{ __html: content }} />
+            </span>
+
         </div>
     )
 }
