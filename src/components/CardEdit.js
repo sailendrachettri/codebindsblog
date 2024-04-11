@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Editor from '../Editor';
+import { toast } from 'react-toastify'
 
 const CardEdit = () => {
     const { id } = useParams();
@@ -38,17 +39,29 @@ const CardEdit = () => {
             data.set('file', files?.[0]);
         }
 
-        // now put the edited content in database
-        const response = await fetch('http://localhost:5000/api/post/edit', {
-            method: 'PUT',
-            body: data,
-            credentials: 'include'
-        })
+        try {
 
-        console.log('card/'+id);
+            // now put the edited content in database
+            const response = await fetch('http://localhost:5000/api/post/edit', {
+                method: 'PUT',
+                body: data,
+                credentials: 'include'
+            })
 
-        if (response.ok) {
-            navigate("/card/" + id);
+            console.log('card/' + id);
+
+            if (response.ok) {
+                navigate("/card/" + id);
+                toast.success("Post Edited successfully!");
+            }
+
+            else {
+                toast.error("You are not an author of this post!");
+            }
+
+
+        } catch (err) {
+            toast.error("Internal server error");
         }
 
     }
