@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom' 
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import Editor from '../Editor';
 
 const CreatePost = () => {
     const navigate = useNavigate();
@@ -41,30 +40,13 @@ const CreatePost = () => {
                     <input type="text" className="form-control my-4" name='title' id="title" aria-describedby="textHelp" placeholder="Enter title" value={title} onChange={ev => setTitle(ev.target.value)} />
                     <input type="summary" className="form-control my-4" name='summary' id="summary" aria-describedby="textHelp" placeholder="Enter summary" value={summary}  onChange={ev => setSummary(ev.target.value)} />
                     <input type="file" className="form-control my-4" name='cover' onChange={ev => setFiles(ev.target.files)} />
-                    <ReactQuill modules={modules} formats={formats} value={content}  onChange={newValue => setContent(newValue)} />
+                    <Editor value={content} onChange={setContent} />
                     <button className='my-4 w-100 btn btn-dark' >Create Post</button>
                 </div>
             </form>
         </>
     )
 }
-
-const modules = {
-    toolbar: [
-      [{ 'header': [1, 2, false] }],
-      ['bold', 'italic', 'underline','strike', 'blockquote'],
-      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-      ['link', 'image'],
-      ['clean']
-    ]
-};
-
-const formats = [
-    'header',
-    'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
-    'link', 'image'
-]
 
 
 export default CreatePost 

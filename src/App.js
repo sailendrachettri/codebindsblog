@@ -13,6 +13,7 @@ import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react';
 import CreatePost from './components/CreatePost';
 import CardDetails from './components/CardDetails';
+import CardEdit from './components/CardEdit';
 
 function App() {
   //react hooks
@@ -28,6 +29,7 @@ function App() {
           <Route path='/register' element={<Register setProgress={setProgress} />} />
           <Route path='/create' element={<CreatePost />} />
           <Route path='/card/:id' element={<CardDetails />} />
+          <Route path='/edit/:id' element={<CardEdit />} />
           <Route path='/' element={<Homepage setProgress={setProgress} />} />
         </Routes>
       <Footer />

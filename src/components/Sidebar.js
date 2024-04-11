@@ -11,7 +11,7 @@ export const Sidebar = () => {
                     <Link to='#' className="list-group-item active border" data-bs-toggle="collapse" data-bs-target="#collapsmenu-1" aria-expanded="false" aria-controls="collapsmenu-1">
                         Learn Ollama
                     </Link>
-                    <div className="collapse show" id="collapsmenu-1">
+                    <div className="collapse" id="collapsmenu-1">
                         <Link to="https://www.youtube.com/watch?v=xa8pTD16SnM&ab_channel=Decoder" target="_blank" className="list-group-item"><i className="bi bi-youtube"></i> Installing Ollama to Customize My Own LLM</Link>
                         <Link to="https://www.youtube.com/watch?v=syR0fT0rkgY&ab_channel=Decoder" target="_blank" className="list-group-item"><i className="bi bi-youtube"></i> Use Your Self-Hosted LLM</Link>
                         <Link to="https://www.youtube.com/watch?v=fnvZJU5Fj3Q&ab_channel=Decoder" target="_blank" className="list-group-item"><i className="bi bi-youtube"></i> Importing Open Source Models to Ollama</Link>
