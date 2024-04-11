@@ -34,7 +34,7 @@ const CardDetails = () => {
 
                 {
                     userInfo?.id === postInfo.author?._id && (
-                        <Link to={`/edit/${_id}`} className='btn btn-dark'><i class="bi bi-pencil-square"></i> Edit this page </Link>
+                        <Link to={`/edit/${_id}`} className='btn btn-dark'><i className="bi bi-pencil-square"></i> Edit this page </Link>
                     )
                 }
             </div>

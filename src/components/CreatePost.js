@@ -38,11 +38,11 @@ const CreatePost = () => {
         <>
             <form  onSubmit={createNewPost} className='container'>
                 <div className="form-group">
-                    <input type="text" className="form-control my-4" name='title' id="title" aria-describedby="textHelp" placeholder="Enter title" value={title} onChange={ev => setTitle(ev.target.value)} />
-                    <input type="summary" className="form-control my-4" name='summary' id="summary" aria-describedby="textHelp" placeholder="Enter summary" value={summary}  onChange={ev => setSummary(ev.target.value)} />
-                    <input type="file" className="form-control my-4" name='cover' onChange={ev => setFiles(ev.target.files)} />
+                    <input type="text" className="form-control my-4" name='title' id="title" aria-describedby="textHelp" placeholder="Enter title" value={title} onChange={ev => setTitle(ev.target.value)} minLength={3} />
+                    <input type="summary" className="form-control my-4" name='summary' id="summary" aria-describedby="textHelp" placeholder="Enter summary" value={summary}  onChange={ev => setSummary(ev.target.value)} minLength={5} />
+                    <input type="file" className="form-control my-4" name='cover' onChange={ev => setFiles(ev.target.files)} required/>
                     <Editor value={content} onChange={setContent} />
-                    <button className='my-4 w-100 btn btn-dark' >Create Post</button>
+                    <button className='my-4 w-100 btn btn-dark'>Create Post</button>
                 </div>
             </form>
         </>
