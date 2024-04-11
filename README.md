@@ -63,7 +63,7 @@ Start the Server
 - normal user activities tracker
 
 # Screenshots
-- will be uploadded soon
+## Homepage
 <p><img src="https://drive.google.com/uc?export=view&id=1jnW8docD3joy3EDHlK_uKKgXMGmwSboy" alt="Front page"></p>
 
 # Contact
