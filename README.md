@@ -59,12 +59,12 @@ Start the Server
 ```
 
 # New feature to be added
-- delete post
+- delete post by author from gui
 - normal user activities tracker
 
 # Screenshots
 - will be uploadded soon
-<!-- <p><img src="https://drive.google.com/uc?export=view&id=1SSC2OirQhpbLov9KHRgFC__PpPby9PUB" alt="Front page"></p> -->
+<p><img src="https://drive.google.com/uc?export=view&id=1jnW8docD3joy3EDHlK_uKKgXMGmwSboy" alt="Front page"></p>
 
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
