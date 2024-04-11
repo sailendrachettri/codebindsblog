@@ -16,7 +16,6 @@ const CardDetails = () => {
         fetch(`${SERVER_URL}/api/post/card/${id}`).then(response => {
             response.json().then(postInfo => {
                 setPostInfo(postInfo);
-                console.log("postInfo: ", postInfo);
             })
         })
     }, [id]);
@@ -25,7 +24,6 @@ const CardDetails = () => {
 
     // get the information from postInfo
     const { cover, title, content, createdAt, _id } = postInfo;
-    console.log("_id: ", _id)
 
     return (
         <div className='container my-4' id='post-page'>

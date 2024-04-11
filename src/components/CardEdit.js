@@ -49,8 +49,6 @@ const CardEdit = () => {
                 credentials: 'include'
             })
 
-            console.log('card/' + id);
-
             if (response.ok) {
                 navigate("/card/" + id);
                 toast.success("Post Edited successfully!");
