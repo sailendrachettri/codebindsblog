@@ -26,7 +26,7 @@ function App() {
       <Navbar setProgress={setProgress} />
         <Routes>
           <Route path='/login' element={<Login setProgress={setProgress} />} />
-          <Route path='/register' element={<Register setProgress={setProgress} />} />
+          {/* <Route path='/register' element={<Register setProgress={setProgress} />} /> */}
           <Route path='/create' element={<CreatePost />} />
           <Route path='/card/:id' element={<CardDetails />} />
           <Route path='/edit/:id' element={<CardEdit />} />

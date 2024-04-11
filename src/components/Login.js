@@ -72,7 +72,7 @@ export default function Login(props) {
     return (
         <>
             <form className='login-signup-form' onSubmit={handleSubmit}>
-                <h1>Welcome Back</h1>
+                <h1>Welcome Back Author</h1>
                 <div>
                     <label htmlFor="username">Username:</label>
                     <input type="text" id="username" name="username" value={credentials.username} onChange={onChange} required />
@@ -82,7 +82,7 @@ export default function Login(props) {
 
                     <button type='submit' onClick={handleLoading}>{loading}</button>
 
-                    <p>Don't have an account yet? <Link to="/register"> Register </Link></p>
+                    {/* <p>Don't have an account yet? <Link to="/register"> Register </Link></p> */}
                 </div>
             </form>
         </>
