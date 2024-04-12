@@ -23,9 +23,9 @@ export const Cards = () => {
     // while loading the content display the skeleton
     if (loading) return (
         <>
-            <Skeleton count={5} />
+            <Skeleton count={5} width={'95%'}/>
             <br />
-            <Skeleton count={5} />
+            <Skeleton count={5} width={'95%'} />
         </>
     )
 
