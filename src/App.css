@@ -19,6 +19,12 @@ body{
   font-family: var(--para-font);
 }
 
+.img404{
+    object-fit:contain;
+    width: auto;
+    height: 500px;
+}
+
 
 button {
   border: none;
@@ -39,7 +45,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem;
   font-family: var(--para-font);
 }
 
@@ -59,12 +64,6 @@ button {
   font-family: var(--para-font);
 }
 
-.login-signup-form label {
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  font-family: var(--para-font);
-}
-
 .login-signup-form input {
   font-size: 1.5rem;
   border: 1px solid var(--border-color);
@@ -73,6 +72,8 @@ button {
   padding-left: 2px;
   font-family: var(--para-font);
   color: var(--text-color-dark);
+  margin: 1rem 0;
+  padding: 1px 5px;
 }
 
 .login-signup-form button {
@@ -84,8 +85,6 @@ button {
   margin: 1rem 0;
   font-family: var(--para-font);
 }
-
-
 /* ----------------------LOGIN STYLE ENDED---------------------- */
 
 /* ----------------------SINGLE PAGE CARD STYLE STARTED---------------------- */

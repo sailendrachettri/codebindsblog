@@ -9,6 +9,7 @@ export const Cards = () => {
     // hooks
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         fetch(`${SERVER_URL}/api/post/fetchpost`).then(response => {
@@ -18,6 +19,7 @@ export const Cards = () => {
             });
         }).catch((err)=>{
             setLoading(false);
+            setError(true);
             console.log("Failed to fetch posts");
         })
     }, []);
@@ -30,6 +32,14 @@ export const Cards = () => {
             <br />
             <Skeleton count={5} width={'95%'} />
         </>
+    )
+
+    if(error) return (
+        <div>
+            <p className='h3 my-4 text-danger'>Failed to load content! Please refresh the page</p>
+            <button className='btn btn-outline-dark'><a href='/' className='text-decoration-none'>Refresh the page</a></button>
+
+        </div>
     )
 
     // if the content is ready the reutrn the content

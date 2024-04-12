@@ -70,7 +70,7 @@ export const Navbar = (props) => {
                             {
                                 !username && (
                                     <>
-                                        <Link to="/login" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Admin Login</Link>
+                                        <Link to="/login" className='btn btn-outline-dark mx-2' onClick={handleProgress}><i class="bi bi-shield-lock"></i> Admin Login</Link>
                                         {/* <Link to="/register" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Register</Link> */}
                                     </>
                                 )

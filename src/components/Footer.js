@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <div className="bg-body-tertiary text-center py-4 mt-4">
+            <div className="bg-body-tertiary text-center py-4">
                 Copyright &copy; <span id="year">0000</span> All rights reserved
             </div>
         </footer>

@@ -14,6 +14,7 @@ import { useState } from 'react';
 import CreatePost from './components/CreatePost';
 import CardDetails from './components/CardDetails';
 import CardEdit from './components/CardEdit';
+import Page404 from './components/Page404';
 
 function App() {
   //react hooks
@@ -25,12 +26,13 @@ function App() {
       <LoadingBar color='black' shadow="true" height={4} loaderSpeed={1000} progress={progress} onLoaderFinished={() => setProgress(progress)} />
       <Navbar setProgress={setProgress} />
         <Routes>
+          <Route path='/' element={<Homepage setProgress={setProgress} />} />
           <Route path='/login' element={<Login setProgress={setProgress} />} />
           {/* <Route path='/register' element={<Register setProgress={setProgress} />} /> */}
           <Route path='/create' element={<CreatePost />} />
           <Route path='/card/:id' element={<CardDetails />} />
           <Route path='/edit/:id' element={<CardEdit />} />
-          <Route path='/' element={<Homepage setProgress={setProgress} />} />
+          <Route path='*' element={<Page404 />} />
         </Routes>
       <Footer />
     </>

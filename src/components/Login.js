@@ -65,21 +65,16 @@ export default function Login(props) {
 
 
     return (
-        <>
+        <div className='min-vh-100'>
             <form className='login-signup-form' onSubmit={handleSubmit}>
                 <h1>Welcome Author</h1>
                 <div>
-                    <label htmlFor="username">Username:</label>
-                    <input type="text" id="username" name="username" value={credentials.username} onChange={onChange} required />
-
-                    <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" name="password" value={credentials.password} onChange={onChange} required />
-
+                    <input type="text" id="username" name="username" placeholder='username' value={credentials.username} onChange={onChange} required autoComplete='off' />
+                    <input type="password" id="password" name="password" placeholder='password' value={credentials.password} onChange={onChange} required />
                     <button type='submit' onClick={handleLoading}>{loading}</button>
-
-                    <p className='text-danger'>Restricted Access: Authors Only!</p>
+                    <p className='text-danger text-center'>Restricted Access: Authors Only!</p>
                 </div>
             </form>
-        </>
+        </div>
     )
 }
