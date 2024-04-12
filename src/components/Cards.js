@@ -16,7 +16,10 @@ export const Cards = () => {
                 setPosts(posts);
                 setLoading(false);
             });
-        });
+        }).catch((err)=>{
+            setLoading(false);
+            console.log("Failed to fetch posts");
+        })
     }, []);
 
 

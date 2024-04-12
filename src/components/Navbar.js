@@ -19,7 +19,9 @@ export const Navbar = (props) => {
             response.json().then(userDoc => {
                 setUserInfo(userDoc)
             });
-        });
+        }).catch((err)=>{
+            console.log("Failed to fetch profile information");
+        })
     }, [setUserInfo]);
 
     const handleLogout = () => {

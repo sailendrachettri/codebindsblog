@@ -11,30 +11,45 @@ const CardDetails = () => {
     const { userInfo } = useContext(UserContext)
 
     // hooks
-    const [postInfo, setPostInfo] = useState(null);
+    const [postInfo, setPostInfo] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         fetch(`${SERVER_URL}/api/post/card/${id}`).then(response => {
             response.json().then(postInfo => {
+                setLoading(false);
                 setPostInfo(postInfo);
             })
+        }).catch((err) => {
+            setError(true);
+            setLoading(false);
+            console.log("Failed to fetch information");
         })
     }, [id]);
 
     // show loading skelaton if the content is not ready
-    if (!postInfo) return (
+    if (loading) return (
         <div className='container my-4' style={{ minHeight: '100rem' }}>
             <Skeleton height={20} />
-            <br/>
-            <Skeleton count={5} /> 
             <br />
-            <Skeleton count={10} /> 
+            <Skeleton count={5} />
+            <br />
+            <Skeleton count={10} />
 
         </div>
     )
 
+    if(error) return (
+        <div style={{minHeight: "75vh"}}>
+            <p  className='h1 text-danger my-4 text-center'>Failed to load content</p>
+        </div>
+    )
+
     // get the information from postInfo
+
     const { cover, title, content, createdAt, _id } = postInfo;
+
 
     return (
         <div className='container my-4' id='post-page'>
