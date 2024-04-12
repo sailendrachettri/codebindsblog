@@ -1,5 +1,6 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import 'react-loading-skeleton/dist/skeleton.css'
 
 import Footer from './components/Footer';
 import { Homepage } from './components/Homepage';

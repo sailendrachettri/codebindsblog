@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { UserContext } from '../UserContext'
 import dateFormat from 'dateformat'
+import Skeleton from 'react-loading-skeleton'
 
-const {SERVER_URL} = require('../environment');
+const { SERVER_URL } = require('../environment');
 
 const CardDetails = () => {
     const { id } = useParams();
@@ -20,7 +21,17 @@ const CardDetails = () => {
         })
     }, [id]);
 
-    if (!postInfo) return "No post information available yet!";
+    // show loading skelaton if the content is not ready
+    if (!postInfo) return (
+        <div className='container my-4' style={{ minHeight: '100rem' }}>
+            <Skeleton height={20} />
+            <br/>
+            <Skeleton count={5} /> 
+            <br />
+            <Skeleton count={10} /> 
+
+        </div>
+    )
 
     // get the information from postInfo
     const { cover, title, content, createdAt, _id } = postInfo;
@@ -40,7 +51,7 @@ const CardDetails = () => {
             </div>
 
 
-            <div className='h1 my-4 text-center page-title'>{title}</div>
+            <div className='h1 my-4 text-center page-title'>{title} </div>
             <span className='post-content'>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </span>
