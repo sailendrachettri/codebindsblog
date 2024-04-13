@@ -4,7 +4,7 @@ import { UserContext } from '../UserContext';
 import { SERVER_URL } from '../environment';
 
 export const Navbar = (props) => {
-    const {userInfo, setUserInfo} = useContext(UserContext);
+    const { userInfo, setUserInfo } = useContext(UserContext);
 
     // variables
     const navigate = useNavigate();
@@ -14,13 +14,16 @@ export const Navbar = (props) => {
     useEffect(() => {
         fetch(`${SERVER_URL}/api/auth/profile`, {
             credentials: 'include',
-             
+
         }).then(response => {
             response.json().then(userDoc => {
                 setUserInfo(userDoc)
-            });
-        }).catch((err)=>{
-            console.log("Failed to fetch profile information");
+
+            }).catch(() => {
+                console.log("Failed to fetch profile information");
+            })
+        }).finally(() => {
+            console.log("Server error - Failed to fetch profile information");
         })
     }, [setUserInfo]);
 
@@ -28,9 +31,9 @@ export const Navbar = (props) => {
 
         fetch(`${SERVER_URL}/api/auth/logout`, {
             credentials: 'include',
-            method : 'POST'
+            method: 'POST'
         })
-        
+
         handleProgress();
         setUserInfo(null);
 
@@ -74,7 +77,7 @@ export const Navbar = (props) => {
                                         {/* <Link to="/register" className='btn btn-outline-dark mx-2' onClick={handleProgress}>Register</Link> */}
                                     </>
                                 )
-                                
+
                             }
 
                             {
