@@ -49,7 +49,7 @@ function App() {
         <Route path='/' element={<Homepage setProgress={setProgress} />} />
         <Route path='/login' element={<Login setProgress={setProgress} />} />
         {/* <Route path='/register' element={<Register setProgress={setProgress} />} /> */}
-        <Route path='/create' element={userInfo?.username ? <CreatePost /> : <Login />} />
+        <Route path='/create' element={userInfo?.username ? <CreatePost /> : <Homepage />} />
         <Route path='/card/:id' element={<CardDetails />} />
         <Route path='/edit/:id' element={<CardEdit />} />
         <Route path='*' element={<Page404 />} />
