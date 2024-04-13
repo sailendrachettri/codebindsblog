@@ -27,11 +27,11 @@ export const Cards = () => {
 
     // while loading the content display the skeleton
     if (loading) return (
-        <>
-            <Skeleton count={5} width={'95%'}/>
+        <div>
+            <Skeleton count={5} width={'80%'}/>
             <br />
-            <Skeleton count={5} width={'95%'} />
-        </>
+            <Skeleton count={5} width={'80%'} />
+        </div>
     )
 
     if(error) return (

@@ -101,6 +101,7 @@ button {
 
 #post-page  h1, .post-content h2, .post-content h3{
   font-family: var(--para-font);
+  font-weight: bold;
 }
 
 .post-content{
@@ -109,7 +110,15 @@ button {
 }
 
 .post-content p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.post-content p a, li a{
+  text-decoration: dotted !important;
+}
+
+.post-content ol li{
   text-align: justify;
 }
 

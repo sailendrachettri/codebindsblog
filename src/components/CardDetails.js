@@ -56,7 +56,7 @@ const CardDetails = () => {
             <img src={`${SERVER_URL}/${cover}`} alt='Cover' className='img-fluid' id='post-cover' />
 
             <div className='my-4'>
-                <span className='text-secondary px-4'>{dateFormat(createdAt, "dddd mmm d, yyyy")}</span>
+                <span className='text-secondary px-4'>Updated on {dateFormat(createdAt, "dddd mmm d, yyyy")}</span>
 
                 {
                     userInfo?.id === postInfo.author?._id && (
