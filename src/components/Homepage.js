@@ -1,6 +1,7 @@
 import React from 'react'
 import { Sidebar } from './Sidebar'
 import { Cards } from './Cards'
+import Newslatter from './Newslatter'
 
 export const Homepage = () => {
     return (
@@ -8,6 +9,7 @@ export const Homepage = () => {
             <div className="container-fluid row justify-content-center">
                 <div className="col-sm-10 col-md-3 order-last">
                     <Sidebar />
+                    <Newslatter />
                 </div>
                 <div className="col-sm-12 col-md-9 text-center mt-4 order-first">
                     <h2>Learn Large Language Model</h2>
