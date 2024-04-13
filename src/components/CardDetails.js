@@ -67,8 +67,8 @@ const CardDetails = () => {
 
 
             <div className='h1 my-4 text-center page-title'>{title} </div>
-            <span className='post-content'>
-                <div dangerouslySetInnerHTML={{ __html: content }} className="ql-editor" />
+            <span className='post-content ql-snow'>
+                <div className="ql-editor" dangerouslySetInnerHTML={{ __html: content }} />
             </span>
 
         </div>
