@@ -25,6 +25,17 @@ body{
     height: 500px;
 }
 
+.img-carousel{
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(2px)
+}
+.carousel-caption{
+  color: black;
+  font-size: large;
+}
+
 
 button {
   border: none;
