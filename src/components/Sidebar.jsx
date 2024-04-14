@@ -22,7 +22,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 1 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(1)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-1" aria-expanded="false" aria-controls="collapsmenu-1">
+                    <Link to='#' onClick={()=>handlMenuToggle(1)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-1" aria-expanded="false" aria-controls="collapsmenu-1">
                         <span>Learn Ollama</span>
                         <i className={`bi bi-chevron-compact-${arrow[1] ? 'up' : "down"}`}></i>
                     </Link>
@@ -77,7 +77,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 2 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(2)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-2" aria-expanded="false" aria-controls="collapsmenu-2">
+                    <Link to='#' onClick={()=>handlMenuToggle(2)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-2" aria-expanded="false" aria-controls="collapsmenu-2">
                         <span>History of NLP</span>
                         <i className={`bi bi-chevron-compact-${arrow[2] ? 'up' : "down"}`}></i>
                     </Link>
@@ -86,7 +86,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 3 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(3)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-3" aria-expanded="false" aria-controls="collapsmenu-3">
+                    <Link to='#' onClick={()=>handlMenuToggle(3)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-3" aria-expanded="false" aria-controls="collapsmenu-3">
                         <span>Large Language Model</span>
                         <i className={`bi bi-chevron-compact-${arrow[3] ? 'up' : "down"}`}></i>
                     </Link>
@@ -155,7 +155,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 4 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(4)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-4" aria-expanded="false" aria-controls="collapsmenu-4">
+                    <Link to='#' onClick={()=>handlMenuToggle(4)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-4" aria-expanded="false" aria-controls="collapsmenu-4">
                         <span>Transformers</span>
                         <i className={`bi bi-chevron-compact-${arrow[4] ? 'up' : "down"}`}></i>
                     </Link>
@@ -176,7 +176,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 5 */}
-                    {/* <Link to='#' onClick={()=>handlMenuToggle(5)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-5" aria-expanded="false" aria-controls="collapsmenu-5">
+                    {/* <Link to='#' onClick={()=>handlMenuToggle(5)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-5" aria-expanded="false" aria-controls="collapsmenu-5">
                         <span>Inference Configuration</span>
                         <i className={`bi bi-chevron-compact-${arrow[5] ? 'up' : "down"}`}></i>
                     </Link>
@@ -185,7 +185,7 @@ export const Sidebar = () => {
                     </div> */}
 
                     {/* // Collaps menu 6 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(6)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-6" aria-expanded="false" aria-controls="collapsmenu-6">
+                    <Link to='#' onClick={()=>handlMenuToggle(6)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-6" aria-expanded="false" aria-controls="collapsmenu-6">
                         <span>Fine Tuning</span>
                         <i className={`bi bi-chevron-compact-${arrow[6] ? 'up' : "down"}`}></i>
                     </Link>
@@ -298,7 +298,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 7 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(7)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-7" aria-expanded="false" aria-controls="collapsmenu-7">
+                    <Link to='#' onClick={()=>handlMenuToggle(7)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-7" aria-expanded="false" aria-controls="collapsmenu-7">
                         <span>Retrieval Augmented Generation</span>
                         <i className={`bi bi-chevron-compact-${arrow[7] ? 'up' : "down"}`}></i>
                     </Link>
@@ -461,7 +461,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 8 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(8)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-8" aria-expanded="false" aria-controls="collapsmenu-8">
+                    <Link to='#' onClick={()=>handlMenuToggle(8)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-8" aria-expanded="false" aria-controls="collapsmenu-8">
                         <span>LLM Applications</span>
                         <i className={`bi bi-chevron-compact-${arrow[8] ? 'up' : "down"}`}></i>
                     </Link>
@@ -582,7 +582,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 9 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(9)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-9" aria-expanded="false" aria-controls="collapsmenu-9">
+                    <Link to='#' onClick={()=>handlMenuToggle(9)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-9" aria-expanded="false" aria-controls="collapsmenu-9">
                         <span>Prompt engineering</span>
                         <i className={`bi bi-chevron-compact-${arrow[9] ? 'up' : "down"}`}></i>
                     </Link>
@@ -598,7 +598,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 10 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(10)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-10" aria-expanded="false" aria-controls="collapsmenu-10">
+                    <Link to='#' onClick={()=>handlMenuToggle(10)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-10" aria-expanded="false" aria-controls="collapsmenu-10">
                         <span>LPU</span>
                         <i className={`bi bi-chevron-compact-${arrow[10] ? 'up' : "down"}`}></i>
                     </Link>
@@ -617,7 +617,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 11 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(11)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-11" aria-expanded="false" aria-controls="collapsmenu-11">
+                    <Link to='#' onClick={()=>handlMenuToggle(11)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-11" aria-expanded="false" aria-controls="collapsmenu-11">
                         <span>HuggingFace</span>
                         <i className={`bi bi-chevron-compact-${arrow[11] ? 'up' : "down"}`}></i>
                     </Link>
@@ -643,7 +643,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 12 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(12)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-12" aria-expanded="false" aria-controls="collapsmenu-12">
+                    <Link to='#' onClick={()=>handlMenuToggle(12)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-12" aria-expanded="false" aria-controls="collapsmenu-12">
                         <span>Responsible AI</span>
                         <i className={`bi bi-chevron-compact-${arrow[12] ? 'up' : "down"}`}></i>
                     </Link>
@@ -653,7 +653,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 13 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(13)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-13" aria-expanded="false" aria-controls="collapsmenu-13">
+                    <Link to='#' onClick={()=>handlMenuToggle(13)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-13" aria-expanded="false" aria-controls="collapsmenu-13">
                         <span>General ML, DL</span>
                         <i className={`bi bi-chevron-compact-${arrow[13] ? 'up' : "down"}`}></i>
                     </Link>
@@ -666,7 +666,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 14 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(14)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-14" aria-expanded="false" aria-controls="collapsmenu-14">
+                    <Link to='#' onClick={()=>handlMenuToggle(14)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-14" aria-expanded="false" aria-controls="collapsmenu-14">
                         <span>Recomanded Youtube Channels</span>
                         <i className={`bi bi-chevron-compact-${arrow[14] ? 'up' : "down"}`}></i>
                     </Link>
@@ -734,7 +734,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 15 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(15)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
+                    <Link to='#' onClick={()=>handlMenuToggle(15)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-15" aria-expanded="false" aria-controls="collapsmenu-15">
                         <span>Metrics for Evaluation</span>
                         <i className={`bi bi-chevron-compact-${arrow[15] ? 'up' : "down"}`}></i>
                     </Link>
@@ -744,7 +744,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 16 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(16)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-16" aria-expanded="false" aria-controls="collapsmenu-16">
+                    <Link to='#' onClick={()=>handlMenuToggle(16)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-16" aria-expanded="false" aria-controls="collapsmenu-16">
                         <span>Free Courses</span>
                         <i className={`bi bi-chevron-compact-${arrow[16] ? 'up' : "down"}`}></i>
                     </Link>
@@ -800,7 +800,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 17 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(17)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-17" aria-expanded="false" aria-controls="collapsmenu-17">
+                    <Link to='#' onClick={()=>handlMenuToggle(17)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-17" aria-expanded="false" aria-controls="collapsmenu-17">
                         <span>Must Read Blogs</span>
                         <i className={`bi bi-chevron-compact-${arrow[17] ? 'up' : "down"}`}></i>
                     </Link>
@@ -814,7 +814,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 18 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(18)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
+                    <Link to='#' onClick={()=>handlMenuToggle(18)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-18" aria-expanded="false" aria-controls="collapsmenu-18">
                         <span>AGI</span>
                         <i className={`bi bi-chevron-compact-${arrow[18] ? 'up' : "down"}`}></i>
                     </Link>
@@ -823,7 +823,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 19 */}
-                    <Link to='#' onClick={()=>handlMenuToggle(19)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-19" aria-expanded="false" aria-controls="collapsmenu-19">
+                    <Link to='#' onClick={()=>handlMenuToggle(19)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-19" aria-expanded="false" aria-controls="collapsmenu-19">
                         <span>Explainable AI</span>
                         <i className={`bi bi-chevron-compact-${arrow[19] ? 'up' : "down"}`}></i>
                     </Link>
@@ -833,7 +833,7 @@ export const Sidebar = () => {
                     </div>
 
                     {/* // Collaps menu 20 */}
-                    {/* <Link to='#' onClick={()=>handlMenuToggle(20)} className="list-group-item active border d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-20" aria-expanded="false" aria-controls="collapsmenu-20">
+                    {/* <Link to='#' onClick={()=>handlMenuToggle(20)} className="list-group-item active border d-flex bg-secondary justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapsmenu-20" aria-expanded="false" aria-controls="collapsmenu-20">
                     <span> Title here..</span>
                     <i className={`bi bi-chevron-compact-${arrow[20] ? 'up' : "down"}`}></i>
                     </Link>
