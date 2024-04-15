@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
-  --bg-color: rgb(37, 82, 179);
+  --bg-color:  rgb(123, 22, 224);
   --text-color-light: whitesmoke;
   --text-color-black: black;
+  --text-color:  rgba(127, 59, 194);
   --text-color-dark: rgb(37, 82, 179);
   --border-color: rgb(37 82 179 / 34%);
+  --border-color2:  rgba(127, 59, 194, 0.736);
   --box-color: rgb(249 249 249);
   --para-font: "Work Sans", sans-serif;
   --heading-font: "Work Sans", sans-serif;
@@ -49,6 +52,15 @@ button {
   font-family: var(--para-font);
 }
 
+h1, h2, h3, h4, h5, strong, em{
+  font-family: var(--para-font);
+  color: var(--bg-color);
+}
+
+.active{
+  background-color: rgba(127, 59, 194, 0.736) !important;
+}
+
 /* ----------------------LOGIN STYLE STARTED---------------------- */
 .login-signup-form {
   min-height: 80vh;
@@ -65,7 +77,7 @@ button {
 }
 
 .login-signup-form div {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color2);
   padding: 1rem;
   border-radius: 5px;
   width: auto;
@@ -77,12 +89,12 @@ button {
 
 .login-signup-form input {
   font-size: 1.5rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color2);
   border-radius: 5px;
   outline: none;
   padding-left: 2px;
   font-family: var(--para-font);
-  color: var(--text-color-dark);
+  color: var(--text-color);
   margin: 1rem 0;
   padding: 1px 5px;
 }
@@ -108,11 +120,6 @@ button {
 
 .page-title{
   font-family: var(--heading-font);
-}
-
-#post-page  h1, .post-content h2, .post-content h3{
-  font-family: var(--para-font);
-  font-weight: bold;
 }
 
 .post-content{
