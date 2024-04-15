@@ -83,7 +83,8 @@ export const Navbar = (props) => {
                             {
                                 username && (
                                     <>
-                                        <Link to='/create' className='btn btn-dark mx-2'>Create new Post</Link>
+                                        <Link to='/createllm' className='btn btn-dark mx-2'>Create LLM post</Link>
+                                        <Link to='/createblog' className='btn btn-dark mx-2'>Create Blog Post</Link>
                                         <button className='btn btn-outline-dark mx-2' onClick={handleLogout}>Logout</button>
                                         <span className='px-3'>Welcome, <span className='text-success fw-bold'>@{username}</span></span>
                                     </>

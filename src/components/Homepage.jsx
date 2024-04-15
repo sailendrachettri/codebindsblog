@@ -3,6 +3,7 @@ import { Sidebar } from './Sidebar'
 import { Cards } from './Cards'
 import Newslatter from './Newslatter'
 import Carousel from './Carousel'
+import { BlogCarousels } from './blogs/BlogCarousels'
 
 export const Homepage = () => {
     return (
@@ -28,6 +29,9 @@ export const Homepage = () => {
                     <div className='my-5'>
                         <Cards />
                     </div>
+
+                    <h3 className='text-start px-3'>Read insightful articles</h3>
+                    <BlogCarousels  />
                 </div>
             </div >
         </>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 
 :root {
@@ -11,7 +12,7 @@
   --border-color2:  rgba(127, 59, 194, 0.736);
   --box-color: rgb(249 249 249);
   --para-font: "Work Sans", sans-serif;
-  --heading-font: "Work Sans", sans-serif;
+  --heading-font: "Delius", sans-serif;
   --box-shadow: 2px 2px 4px 2px whitesmoke;
 }
 
@@ -20,6 +21,10 @@ html {
 }
 body{
   font-family: var(--para-font);
+}
+
+p, li{
+  line-height: 2.6rem;
 }
 
 .img404{
@@ -53,7 +58,8 @@ button {
 }
 
 h1, h2, h3, h4, h5, strong, em{
-  font-family: var(--para-font);
+  /* font-family: var(--para-font); */
+  font-family: var(--heading-font);
   color: var(--bg-color);
 }
 
