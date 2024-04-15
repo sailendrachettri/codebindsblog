@@ -6,13 +6,20 @@ import { SERVER_URL } from '../environment';
 
 const CardEdit = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
 
     // hooks
-    const navigate = useNavigate();
+    const [loading, setLoading] = useState("Update Now");
     const [title, setTitle] = useState("");
     const [summary, setSummary] = useState("");
     const [content, setContent] = useState("");
     const [files, setFiles] = useState("");
+
+    // methods
+    const handleLoading = (e) => {
+        if (title && summary && content)
+            setLoading("Please wait...");
+    }
 
     // fetch the user content
     useEffect(() => {
@@ -52,15 +59,18 @@ const CardEdit = () => {
             if (response.ok) {
                 navigate("/card/" + id);
                 toast.success("Post Edited successfully!");
+                setLoading("Update post");
             }
 
             else {
                 toast.error("You are not an author of this post!");
+                setLoading("Update post");
             }
 
 
         } catch (err) {
             toast.error("Internal server error");
+            setLoading("Update post")
         }
 
     }
@@ -73,7 +83,7 @@ const CardEdit = () => {
                     <input type="summary" className="form-control my-4" name='summary' id="summary" aria-describedby="textHelp" placeholder="Enter summary" value={summary} onChange={ev => setSummary(ev.target.value)} />
                     <input type="file" className="form-control my-4" name='cover' onChange={ev => setFiles(ev.target.files)} />
                     <Editor value={content} onChange={setContent} />
-                    <button className='my-4 w-100 btn btn-dark' >Update Post</button>
+                    <button className='my-4 w-100 btn btn-dark' onClick={handleLoading} >{loading}</button>
                 </div>
             </form>
         </>
