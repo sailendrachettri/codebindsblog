@@ -18,6 +18,8 @@ import Page404 from './components/Page404';
 import { SERVER_URL } from './environment';
 import { UserContext } from './UserContext';
 import CreateBlog from './components/blogs/CreateBlog';
+import BlogDetails from './components/blogs/BlogDetails';
+import BlogEdit from './components/blogs/BlogEdit';
 
 function App() {
   //react hooks
@@ -53,7 +55,9 @@ function App() {
         <Route path='/createllm' element={userInfo?.username ? <CreatePost /> : <Homepage />} />
         <Route path='/createblog' element={userInfo?.username ? <CreateBlog /> : <Homepage />} />
         <Route path='/card/:id' element={<CardDetails />} />
+        <Route path='/blogpost/:id' element={<BlogDetails />} />
         <Route path='/edit/:id' element={<CardEdit />} />
+        <Route path='/blogedit/:id' element={<BlogEdit />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
       <Footer />

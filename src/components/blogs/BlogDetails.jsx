@@ -1,14 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { UserContext } from '../UserContext'
+import { UserContext } from '../../UserContext'
 import dateFormat from 'dateformat'
 import Skeleton from 'react-loading-skeleton'
 
-const { SERVER_URL } = require('../environment');
-
+const { SERVER_URL } = require('../../environment');
+ 
 const BlogDetails = () => {
     const { id } = useParams();
     const { userInfo } = useContext(UserContext)
+    console.log("id details: ", id);
+    console.log("userinfo details: ", userInfo);
 
     // hooks
     const [postInfo, setPostInfo] = useState([]);
@@ -16,7 +18,7 @@ const BlogDetails = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        fetch(`${SERVER_URL}/api/blog/card/${id}`).then(response => {
+        fetch(`${SERVER_URL}/api/blog/blogpost/${id}`).then(response => {
             response.json().then(postInfo => {
                 setLoading(false);
                 setPostInfo(postInfo);
@@ -26,7 +28,7 @@ const BlogDetails = () => {
             setLoading(false);
             console.log("Failed to fetch information");
         })
-    }, [id]);
+    }, [id]); 
 
     // show loading skelaton if the content is not ready
     if (loading) return (
@@ -60,7 +62,7 @@ const BlogDetails = () => {
 
                 {
                     userInfo?.id === postInfo.author?._id && (
-                        <Link to={`/edit/${_id}`} className='btn btn-dark'><i className="bi bi-pencil-square"></i> Edit this page </Link>
+                        <Link to={`/blogedit/${_id}`} className='btn btn-dark'><i className="bi bi-pencil-square"></i> Edit this page </Link>
                     )
                 }
             </div>

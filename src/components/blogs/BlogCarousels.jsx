@@ -14,6 +14,7 @@ export const BlogCarousels = () => {
             response.json().then(posts => {
                 setPosts(posts);
                 setLoading(false);
+                
             });
         }).catch((err) => {
             setLoading(false);
@@ -39,8 +40,8 @@ export const BlogCarousels = () => {
                         posts.length > 0 && posts.map((post, i) => (
                             <BlogCarousel {...post} key={i} />
                         ))
-                    }
 
+                    }
                 </div >
             </div>
                 : <Skeleton count={10} />

@@ -5,7 +5,7 @@ import dateFormat from 'dateformat'
 import Skeleton from 'react-loading-skeleton'
 
 const { SERVER_URL } = require('../environment');
-
+ 
 const CardDetails = () => {
     const { id } = useParams();
     const { userInfo } = useContext(UserContext)
@@ -26,7 +26,7 @@ const CardDetails = () => {
             setLoading(false);
             console.log("Failed to fetch information");
         })
-    }, [id]);
+    }, [id]); 
 
     // show loading skelaton if the content is not ready
     if (loading) return (

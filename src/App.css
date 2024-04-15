@@ -3,13 +3,13 @@
 
 
 :root {
-  --bg-color:  rgb(127, 59, 194);
+  --bg-color: rgb(127, 59, 194);
   --text-color-light: whitesmoke;
   --text-color-black: black;
-  --text-color:  rgba(127, 59, 194);
+  --text-color: rgba(127, 59, 194);
   --text-color-dark: rgb(37, 82, 179);
   --border-color: rgb(37 82 179 / 34%);
-  --border-color2:  rgba(127, 59, 194, 0.736);
+  --border-color2: rgba(127, 59, 194, 0.736);
   --box-color: rgb(249 249 249);
   --para-font: "Work Sans", sans-serif;
   --heading-font: "Delius", sans-serif;
@@ -19,27 +19,34 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   font-family: var(--para-font);
 }
 
-p, li{
+p,
+li {
   line-height: 2.6rem;
 }
 
-.img404{
-    object-fit:contain;
-    width: auto;
-    height: 500px;
+.card-text{
+  line-height: 2rem;
 }
 
-.img-carousel{
+.img404 {
+  object-fit: contain;
+  width: auto;
+  height: 500px;
+}
+
+.img-carousel {
   max-height: 300px;
   width: 100%;
   object-fit: cover;
   filter: blur(2px)
 }
-.carousel-caption{
+
+.carousel-caption {
   color: black;
   font-size: large;
 }
@@ -57,13 +64,19 @@ button {
   font-family: var(--para-font);
 }
 
-h1, h2, h3, h4, h5, strong, em{
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+em {
   /* font-family: var(--para-font); */
   font-family: var(--heading-font);
   color: var(--bg-color);
 }
 
-.active{
+.active {
   background-color: rgba(127, 59, 194, 0.736) !important;
 }
 
@@ -114,45 +127,47 @@ h1, h2, h3, h4, h5, strong, em{
   margin: 1rem 0;
   font-family: var(--para-font);
 }
+
 /* ----------------------LOGIN STYLE ENDED---------------------- */
 
 /* ----------------------SINGLE PAGE CARD STYLE STARTED---------------------- */
-#post-cover{
+#post-cover {
   object-fit: cover;
   overflow: hidden;
   width: 100%;
   max-height: 350px;
 }
 
-.page-title{
+.page-title {
   font-family: var(--heading-font);
 }
 
-.post-content{
+.post-content {
   line-height: 2rem;
   font-family: var(--para-font);
 }
 
-.post-content p{
+.post-content p {
   font-size: 1.1rem;
   text-align: justify;
 }
 
-.post-content p a, li a{
+.post-content p a,
+li a {
   text-decoration: dotted !important;
 }
 
-.post-content ol li{
+.post-content ol li {
   text-align: justify;
 }
 
-p > img{
+p>img {
   margin: auto;
   display: flex;
   justify-content: center;
 }
 
-#post-page .post-content img{
+#post-page .post-content img {
   width: 70%;
   height: auto;
   object-fit: cover;
@@ -160,10 +175,19 @@ p > img{
   border-radius: 5px;
 }
 
-@media screen and (max-width: 500px){
-  #post-page .post-content img{
+@media screen and (max-width: 500px) {
+  #post-page .post-content img {
     width: 100%;
   }
 }
 
 /* ----------------------SINGLE PAGE CARD STYLE ENDED---------------------- */
+
+/* ----------------------------BLOGPOST STYLE STARTED---------------------------- */
+.adjust-card {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------BLOGPOST STYLE ENDED---------------------------- */
