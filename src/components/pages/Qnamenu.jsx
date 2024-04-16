@@ -46,7 +46,7 @@ const Qnamenu = () => {
                 {
                     posts.length > 0 && posts.map((post, i) => (
                         <>
-                            <p className='lh-sm text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
+                            <p style={{margin: 0}} className='text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
                             <Link to={`/card/${post._id}`} className='lh-sm text-decoration-none'>{post.title}</Link>
                             <hr />
                         </>
