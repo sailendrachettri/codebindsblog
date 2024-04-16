@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { SERVER_URL } from '../../environment';
 import dateFormat from 'dateformat'
 import Skeleton from 'react-loading-skeleton';
+import { Link } from 'react-router-dom';
 
 
 const Qnamenu = () => {
@@ -22,7 +23,7 @@ const Qnamenu = () => {
         })
     }, []);
 
-       if(loading) return (
+    if (loading) return (
         <>
             <Skeleton count={2} />
             <br />
@@ -34,22 +35,22 @@ const Qnamenu = () => {
             <br />
             <Skeleton count={2} />
             <br />
-            
+
         </>
-       )
+    )
 
     return (
         <>
-            <div className='my-5'>
-                <h3>Recent articles on AI</h3>
+            <h3 className='my-5'>Recent articles on AI</h3>
+            <div className='border-start px-1'>
                 {
-                        posts.length > 0 && posts.map((post, i) => (
-                            <>
-                                <p className='lh-sm text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
-                                <p className='lh-sm'>{post.title}</p>
-                                <hr />
-                            </>
-                        ))
+                    posts.length > 0 && posts.map((post, i) => (
+                        <>
+                            <p className='lh-sm text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
+                            <Link to={`/card/${post._id}`} className='lh-sm text-decoration-none'>{post.title}</Link>
+                            <hr />
+                        </>
+                    ))
                 }
 
 
