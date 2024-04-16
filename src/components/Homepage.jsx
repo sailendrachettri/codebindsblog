@@ -4,6 +4,7 @@ import { Cards } from './Cards'
 import Newslatter from './Newslatter'
 import Carousel from './Carousel'
 import { BlogCarousels } from './blogs/BlogCarousels'
+import Qnamenu from './pages/Qnamenu'
 
 export const Homepage = () => {
     return (
@@ -12,6 +13,7 @@ export const Homepage = () => {
                 <div className="col-sm-10 col-md-3 order-last">
                     <Sidebar />
                     <Newslatter />
+                    <Qnamenu />
                 </div>
                 <div className="col-sm-12 col-md-9 text-center mt-4 order-first">
                     <h2>Learn Large Language Model</h2>

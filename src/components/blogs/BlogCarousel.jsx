@@ -13,7 +13,7 @@ const BlogCarousel = ({ _id, title, summary, cover }) => {
                 <div className="col-md-6 p-4 ps-md-0">
                     <h5 className="mt-0">{title}</h5>
                     <p style={{textAlign: 'justify'}}>{summary}</p>
-                    <Link to={`/blogpost/${_id}`} className='btn btn-outline-dark'>Readmore</Link>
+                    <Link to={`/blogpost/${_id}`} className='btn btn-outline-dark'>Read now</Link>
                 </div>
             </Link>
         </>
