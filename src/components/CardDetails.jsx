@@ -54,8 +54,15 @@ const CardDetails = () => {
 
     return (
         <div class="container-fluid row">
-            <div class="col-sm-12 col-md-9 text-center mt-4 order-first">
+            <div class="col-sm-12 col-md-9 text-center order-first">
                 <div className='container my-4' id='post-page'>
+                    <nav style={{ '--bs-breadcrumb-divider': 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%236c757d\'/%3E%3C/svg%3E")' }} aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                            <li className="breadcrumb-item" aria-current="page">Reading</li>
+                        </ol>
+                    </nav>
+
                     <img src={`${SERVER_URL}/${cover}`} alt='Cover' className='img-fluid' id='post-cover' />
 
                     <div className='my-4'>
@@ -77,7 +84,7 @@ const CardDetails = () => {
                 </div>
             </div>
             <div class="col-sm-10 col-md-3 order-last">
-                <Sidemenu />                
+                <Sidemenu />
             </div>
         </div>
 
