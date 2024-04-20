@@ -1,5 +1,5 @@
 
-# GANGTOK TRAVELLERS
+# LearnLLMs
 
 ## Tech Stack
 
