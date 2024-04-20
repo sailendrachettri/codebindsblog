@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 const Qnamenu = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
 
     useEffect(() => {
         fetch(`${SERVER_URL}/api/post/fetchpost`).then(response => {
@@ -18,7 +17,6 @@ const Qnamenu = () => {
             });
         }).catch((err) => {
             setLoading(false);
-            setError(true);
             console.log("Failed to fetch posts");
         })
     }, []);

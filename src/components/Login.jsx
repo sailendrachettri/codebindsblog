@@ -31,7 +31,9 @@ export default function Login(props) {
             const response = await fetch(`${SERVER_URL}/api/auth/login`, {
                 method: 'POST',
                 body: JSON.stringify({username, password}),
-                headers: {'Content-Type': 'application/json'},
+                headers: {
+                    'Content-Type': 'application/json',
+                },
                 credentials: 'include',
             })
             props.setProgress(80);

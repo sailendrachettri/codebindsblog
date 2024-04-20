@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SERVER_URL } from "../environment";
+import { SERVER_URL } from "../../environment";
 import { toast } from 'react-toastify';
 
 const Newslatter = () => {
