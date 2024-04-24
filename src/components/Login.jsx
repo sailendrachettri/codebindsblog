@@ -22,7 +22,7 @@ export default function Login(props) {
 
     async function handleSubmit(e) {
         e.preventDefault();
-
+ 
         props.setProgress(10);
 
         const { username, password } = credentials;
@@ -31,9 +31,7 @@ export default function Login(props) {
             const response = await fetch(`${SERVER_URL}/api/auth/login`, {
                 method: 'POST',
                 body: JSON.stringify({username, password}),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: {'Content-Type': 'application/json'},
                 credentials: 'include',
             })
             props.setProgress(80);
@@ -53,7 +51,10 @@ export default function Login(props) {
                 props.setProgress(100);
 
                 setLoading("Login")
-                toast.error("Something went wrong!");
+                response.json().then(userInfo =>{
+                    
+                    toast.error(userInfo.message);
+                })
             }
 
         } catch (error) {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom' 
 import Editor from '../../Editor';
 import { SERVER_URL } from '../../environment';
+import {toast} from 'react-toastify'
 
 const CreateBlog = () => {
     const navigate = useNavigate();
@@ -30,6 +31,10 @@ const CreateBlog = () => {
 
         if(response.ok){
             navigate("/");
+            toast.success("Post created successfully!");
+        } else{
+            toast.error("Failed to create post!");
+
         }
     }
     

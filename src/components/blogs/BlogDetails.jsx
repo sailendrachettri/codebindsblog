@@ -9,6 +9,8 @@ const { SERVER_URL } = require('../../environment');
 const BlogDetails = () => {
     const { id } = useParams();
     const { userInfo } = useContext(UserContext)
+    console.log("id details: ", id);
+    console.log("userinfo details: ", userInfo);
 
     // hooks
     const [postInfo, setPostInfo] = useState([]);

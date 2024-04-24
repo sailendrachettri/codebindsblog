@@ -1,5 +1,5 @@
 
-# LearnLLMs
+# GANGTOK TRAVELLERS
 
 ## Tech Stack
 
@@ -18,7 +18,7 @@
 ## App on Production
 
 
-#### Demo: [Deployed on renders](https://learnllm.onrender.com/)
+#### Demo: work on progress...
 
 ## Run Locally
 
