@@ -5,7 +5,6 @@ const { SERVER_URL } = require('../../environment');
 const BlogCarousel = ({ _id, title, summary, cover }) => {
     return (
         <>
-        {console.log("this is id carousel::: ",_id)}
             <Link to={`/blogpost/${_id}`} className="row g-0 position-relative border mb-3 rounded text-decoration-none text-dark">
                 <div className="col-md-6 mb-md-0 p-md-4">
                     <img src={`${SERVER_URL}/${cover}`} className="img-fluid rounded adjust-card" alt="Post Cover" />
