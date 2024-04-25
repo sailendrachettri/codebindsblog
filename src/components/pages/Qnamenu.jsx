@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 const Qnamenu = () => {
     const [posts, setPosts] = useState([]);
+    const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
 
     useEffect(() => {
         fetch(`${SERVER_URL}/api/post/fetchpost`).then(response => {
@@ -18,7 +18,17 @@ const Qnamenu = () => {
             });
         }).catch((err) => {
             setLoading(false);
-            setError(true);
+            console.log("Failed to fetch posts");
+        })
+    }, []);
+    useEffect(() => {
+        fetch(`${SERVER_URL}/api/blog/allfetchpost`).then(response => {
+            response.json().then(blogs => {
+                setBlogs(blogs);
+                setLoading(false);
+            });
+        }).catch((err) => {
+            setLoading(false);
             console.log("Failed to fetch posts");
         })
     }, []);
@@ -45,16 +55,26 @@ const Qnamenu = () => {
             <div className='border-start px-1'>
                 {
                     posts.length > 0 && posts.map((post, i) => (
-                        <>
+                        <div key={i}>
                             <p style={{margin: 0}} className='text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
-                            <Link to={`/card/${post._id}`} className='lh-sm text-decoration-none'>{post.title}</Link>
+                            <Link to={`/card/${post._id}`} key={i} target='_blank' className='lh-sm text-decoration-none'>{post.title}</Link>
                             <hr />
-                        </>
+                        </div>
                     ))
                 }
+            </div>
 
-
-
+            <h3 className='my-5'>Recent Blogs</h3>
+            <div className='border-start px-1'>
+                {
+                    blogs.length > 0 && blogs.map((post, i) => (
+                        <div key={i}>
+                            <p style={{margin: 0}} className='text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
+                            <Link to={`/blogpost/${post._id}`} key={i} target='_blank' className='lh-sm text-decoration-none'>{post.title}</Link>
+                            <hr />
+                        </div>
+                    ))
+                }
             </div>
         </>
     )

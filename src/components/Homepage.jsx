@@ -5,6 +5,7 @@ import Qnamenu from './pages/Qnamenu'
 import TopFiveArticles from './blogs/TopFiveArticles'
 import AllBlogPosts from './blogs/AllBlogPosts'
 import LLMCards from './pages/LLMCards'
+import SimilarReads from './pages/SimilarReads'
 
 export const Homepage = () => {
     return (
@@ -22,6 +23,7 @@ export const Homepage = () => {
                     <LLMCards />
                     <TopFiveArticles />
                     <AllBlogPosts />
+                    <SimilarReads />
                 </div>
             </div >
         </>

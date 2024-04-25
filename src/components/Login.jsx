@@ -70,7 +70,7 @@ export default function Login(props) {
     return (
         <div className='min-vh-100'>
             <form className='login-signup-form' onSubmit={handleSubmit}>
-                <h1>Welcme<i class="bi bi-shield-lock text-danger"></i>Author</h1>
+                <h1>Welcme<i className="bi bi-shield-lock text-danger"></i>Author</h1>
                 <div>
                     <input type="text" id="username" name="username" placeholder='username' value={credentials.username} onChange={onChange} required autoComplete='off' />
                     <input type="password" id="password" name="password" placeholder='password' value={credentials.password} onChange={onChange} required />
