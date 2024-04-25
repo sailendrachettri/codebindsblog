@@ -12,7 +12,7 @@ const BlogCard = ({ _id, title, summary, cover, updatedAt }) => {
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text" style={{ textAlign: 'justify' }}>{(summary.length < 220) ? summary : summary.substring(0, 220) + "(more)"}</p>
                     <p className="card-text text-secondary">Last Updated: {dateFormat(updatedAt, "mmmm d, yyyy")}</p>
-                    <Link to={`/card/${_id}`} className="btn btn-outline-dark">Learnmore</Link>
+                    <Link to={`/blogpost/${_id}`} className="btn btn-outline-dark">Learnmore</Link>
                 </div>
             </div>
         </>
