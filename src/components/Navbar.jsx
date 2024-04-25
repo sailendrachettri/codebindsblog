@@ -66,7 +66,7 @@ export const Navbar = (props) => {
                                 <Link className="nav-link text-dark" aria-current="page" to="/" onClick={handleProgress}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" target='_blank' to="https://github.com/parthaPRay/LLM-Learning-Sources">Original Docs</Link>
+                                <Link className="nav-link" target='_blank' to="https://codebinds.blinkstore.in"><i class="bi bi-cart3"></i> Store</Link>
                             </li>
                         </ul>
                         <div className='d-flex align-items-center'>

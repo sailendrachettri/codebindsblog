@@ -18,7 +18,7 @@ export const Sidebar = () => {
             <div className="mt-4">
                 <ul className="list-group">
                     <div className="list-group-item bg-light">
-                        <i className="bi bi-menu-button-wide"></i><span>Expandable Menu</span>
+                        <i className="bi bi-menu-button-wide"></i><span> LLMs Resources</span>
                     </div>
 
                     {/* // Collaps menu 1 */}
