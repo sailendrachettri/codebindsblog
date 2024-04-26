@@ -57,7 +57,7 @@ const Qnamenu = () => {
                     posts.length > 0 && posts.map((post, i) => (
                         <div key={i}>
                             <p style={{margin: 0}} className='text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
-                            <Link to={`/card/${post._id}`} key={i} target='_blank' className='lh-sm text-decoration-none'>{post.title}</Link>
+                            <Link to={`/card/${post._id}`} key={i} className='lh-sm text-decoration-none'>{post.title}</Link>
                             <hr />
                         </div>
                     ))
@@ -70,7 +70,7 @@ const Qnamenu = () => {
                     blogs.length > 0 && blogs.map((post, i) => (
                         <div key={i}>
                             <p style={{margin: 0}} className='text-secondary'>{dateFormat(post.updatedAt, "mmmm yyyy")}</p>
-                            <Link to={`/blogpost/${post._id}`} key={i} target='_blank' className='lh-sm text-decoration-none'>{post.title}</Link>
+                            <Link to={`/blogpost/${post._id}`} key={i} className='lh-sm text-decoration-none'>{post.title}</Link>
                             <hr />
                         </div>
                     ))

@@ -41,7 +41,7 @@ const SimilarReads = () => {
                             blogs.length > 0 && blogs.map((post, i) => (
                                 <div className="card mt-4 bg-light text-primary" key={i}>
                                     <div className="card-body">
-                                        <Link to={`/blogpost/${post._id}`} key={i} target='_blank' className='card-title lh-sm text-decoration-none'>{post.title}</Link>
+                                        <Link to={`/blogpost/${post._id}`} key={i} className='card-title lh-sm text-decoration-none'>{post.title}</Link>
                                     </div>
                                 </div>
                             ))
@@ -59,7 +59,7 @@ const SimilarReads = () => {
                             posts.length > 0 && posts.map((post, i) => (
                                 <div className="card mt-4 bg-light text-primary" key={i}>
                                     <div className="card-body">
-                                        <Link to={`/card/${post._id}`} key={i} target='_blank' className='card-title lh-sm text-decoration-none'>{post.title}</Link>
+                                        <Link to={`/card/${post._id}`} key={i}  className='card-title lh-sm text-decoration-none'>{post.title}</Link>
                                     </div>
                                 </div>
                             ))
