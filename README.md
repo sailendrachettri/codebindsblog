@@ -64,7 +64,7 @@ Start the Server
 
 # Screenshots
 ## Homepage
-<p><img src="https://drive.google.com/uc?export=view&id=1jnW8docD3joy3EDHlK_uKKgXMGmwSboy" alt="Front page"></p>
+<p><img src="https://drive.google.com/uc?export=view&id=1w4qy7qCRf_EKaoCB0O801fCEuVZQ1VmU" alt="Front page"></p>
 
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
