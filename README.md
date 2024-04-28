@@ -1,5 +1,5 @@
 
-# GANGTOK TRAVELLERS
+# CODEBINDS BLOG
 
 ## Tech Stack
 
@@ -25,36 +25,36 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/sailendrachettri/learnllm-client.git
-  git clone https://github.com/sailendrachettri/learnllm-server.git
+  git clone https://github.com/sailendrachettri/codebindsblog.git
+  git clone https://github.com/sailendrachettri/codebinds-server.git
 ```
 
 Go to the project directory
 
 ```bash 
-  cd learnllm-client
+  cd codebindsblog
    OR 
-  cd learnllm-server
+  cd codebinds-server
 
 ```
 
 Install dependencies
 
 ```bash
-  cd learnllm-client
+  cd codebindsblog
   npm i
 
-  cd learnllm-server
+  cd codebinds-server
   npm i
 ```
 
 Start the Server
 
 ```bash
-  cd learnllm-client
+  cd codebindsblog
   npm start
 
-  cd learnllm-client
+  cd codebinds-client
   nodemon index.js
 ```
 
